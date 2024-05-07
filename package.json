@@ -9,14 +9,16 @@
     "dist"
   ],
   "license": "MIT",
-  "scripts": {},
   "keywords": [
     "chatbot",
     "koishi",
     "plugin"
   ],
-  "devDependencies": {},
   "peerDependencies": {
     "koishi": "^4.17.5"
+  },
+  "dependencies": {
+    "rss-feed-emitter": "^3.2.3",
+    "rxjs": "^7.8.1"
   }
 }
