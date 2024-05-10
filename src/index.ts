@@ -1,12 +1,17 @@
-import { Context, Schema, Session, Time } from 'koishi'
+import { Context, Logger, Schema, Session, Time, h, $ } from 'koishi'
+import { concatMap, map, of, switchMap, throwError } from 'rxjs';
+import *  as logic from './logic';
 import RssFeedEmitter from 'rss-feed-emitter'
-import { map, of } from 'rxjs';
 
 export const name = 'rss-cat'
 export const inject = {
   optional: [],
   required: ['database']
 }
+
+export const using = ['database'] as const
+
+export const logger = new Logger('rss-cat')
 
 export interface Config {
   timeout?: number
@@ -26,74 +31,90 @@ declare module 'koishi' {
   interface Tables {
     'rsscat.source': RssSource
   }
+  interface Channel {
+    rsscatSource: number[]
+  }
 }
 export interface RssSource {
+  id: number
   rssLink: string
   subscriber: string[]
-  lastUpdate: number
-  lastPost: string
+  //lastUpdate: number
+  //lastPost: string
 }
-export function apply(ctx: Context,config:Config) {
+export function apply(ctx: Context, config: Config) {
   ctx.model.extend("rsscat.source", {
+    id: 'unsigned',
     rssLink: 'string',
     subscriber: 'list'
-  },{
+  }, {
     //https://koishi.chat/zh-CN/api/database/model.html#实例方法
-    //指定主键为rssLink
-    primary: 'rssLink'
-  }
-  )
-
-  const { timeout, refresh, userAgent } = config
-
+    primary: 'id',
+    autoInc: true
+  })
+  ctx.model.extend('channel', {
+    rsscatSource: 'list',
+  })
   // write your plugin here
-  ctx.command('rss-cat', '订阅推送，设计为与rsshub搭配使用')
-
-  
-  ctx.command('rss-cat.add <rssLink:string>', '在当前频道增加一个订阅').example('rss-cat add https://www.solidot.org/index.rss')
-  .action(async function( { session  },rssLink ){
-    const { id, platform } = session.event
-    const ChannelID = `${platform}:${id}`
+  // RssFeedEmitter 初始化
+  const feeder = new RssFeedEmitter({ skipFirstLoad: true, userAgent: config.userAgent })
+  ctx.on('dispose', () => {
+    feeder.destroy()
+  })
+  feeder.on('error', (err: Error) => {
+    logger.debug(err.message)
+  })
+  feeder.on('new-item', async (payload) => {
     
-    of({ rssLink, ChannelID }).pipe(
-      map((data) => {
-        data.rssLink = (new URL(data.rssLink)).href;
-        return data
-      })
-    ).subscribe(data => {
-      console.log(data)
-    })
-
-    //const Channel_list = await ctx.database.get('rsscat.source', rssLink)
-
-    //if (Channel_list.length >= 0) return '已订阅此链接。'
-    //return JSON.stringify(session.event)
+    const source = payload.meta.link
+    const message = `${payload.meta.title} (${payload.author})\n${payload.description}`
+    logger.debug('new-item', message)
+    const subscriber = (await ctx.database.get('rsscat.source', {rssLink: source}, ["subscriber"]))[0].subscriber
+    
+    ctx.broadcast(subscriber,message)
     
   })
 
-  const validators: Record<string, Promise<unknown>> = {}
-  async function validate(url: string, session: Session) {
-    if (validators[url]) {
-      await session.send('正在尝试连接……')
-      return validators[url]
-    }
-
-    let timer: NodeJS.Timeout
-    const feeder = new RssFeedEmitter({ userAgent })
-    return validators[url] = new Promise((resolve, reject) => {
-      // rss-feed-emitter's typings suck
-      feeder.add({ url, refresh: 1 << 30 })
-      feeder.on('new-item', resolve)
-      feeder.on('error', reject)
-      timer = setTimeout(() => reject(new Error('connect timeout')), timeout)
-    }).finally(() => {
-      feeder.destroy()
-      clearTimeout(timer)
-      delete validators[url]
+  ctx.on('ready', async () => {
+    const RssLinks = (await ctx.database.get('rsscat.source', {
+      id: { $gt: 0 },
+    }, ['rssLink'])).forEach((item) => {
+      feeder.add({ url: item.rssLink , refresh: config.refresh })
     })
-  }
-  
-  ctx.command('rss-cat.list', '显示当前频道所有已订阅源')
+  })
+
+  ctx.command('rss-cat', '订阅推送，设计为与rsshub搭配使用')
+
+  ctx.command('rss-cat.add <rssLink:string>', '增加一个订阅').example('rss-cat add https://www.solidot.org/index.rss')
+    .channelFields(['rsscatSource', 'id', 'platform'])
+    .action(async function ({ session }, rssLink) {
+      const { id, platform } = session.channel
+      const ChannelID = `${platform}:${id}`
+
+      of({ rssLink, ChannelID }).pipe(
+        logic.AddSubOperator(ctx, session, config)
+      ).
+        subscribe({
+          next: async (data) => {
+            //return "需要return才能更新rsscatSource？"
+            session.send('添加订阅成功：' + `${data.DBindex} - ` + h.escape(data.rssLink));
+          },
+          error: (err) => {
+            // 处理订阅中的错误
+            logger.warn(err);
+            session.send('添加订阅时出错：' + h.escape(err.message));
+          }
+        });
+    })
+
+  ctx.command('rss-cat.remove <rssLink:string>', '移除一个订阅').example('rss-cat remove https://www.solidot.org/index.rss')
+    .channelFields(['rsscatSource', 'id', 'platform'])
+    .action(async function ({ session }, rssLink) {
+      const { id, platform, rsscatSource } = session.channel
+      rsscatSource.push(312)
+    })
+
+  //ctx.command('rss-cat.list', '显示当前频道所有已订阅源')
 
   //ctx.command('rss-cat.set', '设定 rss-cat 在当前频道的行为')
 }
