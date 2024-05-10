@@ -110,8 +110,7 @@ export function apply(ctx: Context, config: Config) {
   ctx.command('rss-cat.remove <rssLink:string>', '移除一个订阅').example('rss-cat remove https://www.solidot.org/index.rss')
     .channelFields(['rsscatSource', 'id', 'platform'])
     .action(async function ({ session }, rssLink) {
-      const { id, platform, rsscatSource } = session.channel
-      rsscatSource.push(312)
+      
     })
 
   //ctx.command('rss-cat.list', '显示当前频道所有已订阅源')
