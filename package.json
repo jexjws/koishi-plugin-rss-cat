@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-rss-cat",
   "description": "又一款rss订阅推送器",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -15,13 +15,13 @@
     "plugin"
   ],
   "peerDependencies": {
-    "koishi": "^4.17.5"
+    "koishi": "^4.17.6"
   },
   "dependencies": {
     "rss-feed-emitter": "^3.2.3",
     "rxjs": "^7.8.1"
   },
-  "koishi":{
-    "preview":true
+  "koishi": {
+    "preview": true
   }
 }

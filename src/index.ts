@@ -21,7 +21,7 @@ export interface Config {
 }
 export const Config: Schema<Config> = Schema.object({
   timeout: Schema.number().description('请求数据的最长时间。').default(Time.second * 10),
-  refresh: Schema.number().description('刷新数据的时间间隔。').default(Time.minute),
+  refresh: Schema.number().description('刷新数据的最低时间间隔。').default(Time.minute),
   userAgent: Schema.string().description('请求时使用的 User Agent。'),
   rsshubBackend: Schema.string().description('自托管 RSSHub 的后端地址。插件加载时会把 hostname 为 rsshub.app 的rss源替换成你提供的后端hostname。').default('https://rsshub.app'),
 })
@@ -32,7 +32,7 @@ declare module 'koishi' {
     'rsscat.source': RssSource
   }
   interface Channel {
-    rsscatSource: number[]
+    rsscatSource: string[]
   }
 }
 export interface RssSource {
@@ -54,38 +54,25 @@ export function apply(ctx: Context, config: Config) {
   })
   ctx.model.extend('channel', {
     rsscatSource: 'list',
+    //rsscatSource 当索引用，快速拉取出该频道订阅的源
   })
   // write your plugin here
-  // RssFeedEmitter 初始化
-  const feeder = new RssFeedEmitter({ skipFirstLoad: true, userAgent: config.userAgent })
+
   ctx.on('dispose', () => {
-    feeder.destroy()
-  })
-  feeder.on('error', (err: Error) => {
-    logger.debug(err.message)
-  })
-  feeder.on('new-item', async (payload) => {
-    
-    const source = payload.meta.link
-    const message = `${payload.meta.title} (${payload.author})\n${payload.description}`
-    logger.debug('new-item', message)
-    const subscriber = (await ctx.database.get('rsscat.source', {rssLink: source}, ["subscriber"]))[0].subscriber
-    
-    ctx.broadcast(subscriber,message)
-    
+    //
   })
 
-  ctx.on('ready', async () => {
-    const RssLinks = (await ctx.database.get('rsscat.source', {
-      id: { $gt: 0 },
-    }, ['rssLink'])).forEach((item) => {
-      feeder.add({ url: item.rssLink , refresh: config.refresh })
-    })
-  })
+  //定时拉取新消息，有新消息就推送
+  //ctx.throttle 返回一个函数，该函数在指定的周期内最多执行一次。
+  const FetchAndBroadcastNews =
+    ctx.throttle(() => { 
 
-  ctx.command('rss-cat', '订阅推送，设计为与rsshub搭配使用')
+    }, config.refresh, true)
+  ctx.setInterval(() => { FetchAndBroadcastNews() }, config.refresh)
 
-  ctx.command('rss-cat.add <rssLink:string>', '增加一个订阅').example('rss-cat add https://www.solidot.org/index.rss')
+  ctx.command('rsscat', '订阅推送，设计为与rsshub搭配使用')
+
+  ctx.command('rsscat.add <rssLink:string>', '增加一个订阅').example('rss-cat add https://www.solidot.org/index.rss')
     .channelFields(['rsscatSource', 'id', 'platform'])
     .action(async function ({ session }, rssLink) {
       const { id, platform } = session.channel
@@ -107,13 +94,39 @@ export function apply(ctx: Context, config: Config) {
         });
     })
 
-  ctx.command('rss-cat.remove <rssLink:string>', '移除一个订阅').example('rss-cat remove https://www.solidot.org/index.rss')
+  ctx.command('rsscat.remove <rssLink_or_rssId:string>', '移除一个订阅').example('rss-cat remove https://www.solidot.org/index.rss').example('rss-cat remove 1')
     .channelFields(['rsscatSource', 'id', 'platform'])
-    .action(async function ({ session }, rssLink) {
-      
-    })
+    .action(async function ({ session }, rssLink_or_rssId) {
+      const { id, platform } = session.channel
+      const ChannelID = `${platform}:${id}`
 
-  //ctx.command('rss-cat.list', '显示当前频道所有已订阅源')
+      of({ rssLink_or_rssId, ChannelID }).pipe(
+        logic.RemSubOperator(ctx, session, config)
+      ).
+        subscribe({
+          next: async () => {
+            session.send('移除订阅成功。');
+          },
+          error: (err) => {
+            logger.warn(err);
+            session.send('移除订阅时出错：' + h.escape(err.message));
+          }
+        })
+    });
+
+  ctx.command('rsscat.list', '显示当前频道所有已订阅源').example('rss-cat list')
+    .channelFields(['rsscatSource'])
+    .action(async function ({ session }) {
+      if (session.channel.rsscatSource.length === 0) {
+        return '该频道还没订阅任何源'
+      }
+      let DBreturn = await ctx.database.get('rsscat.source', { id: Number(session.channel.rsscatSource) }, ["id", "rssLink"])
+      let outputStr = `共订阅了 ${DBreturn.length} 个源：\n`
+      DBreturn.forEach((item) => {
+        outputStr += `${item.id} - ${item.rssLink}\n`
+      })
+      return outputStr
+    });
 
   //ctx.command('rss-cat.set', '设定 rss-cat 在当前频道的行为')
 }
