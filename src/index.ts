@@ -1,7 +1,7 @@
 import { Context, Logger, Schema, Session, Time, h, $ } from 'koishi'
-import { concatMap, map, of, switchMap, throwError } from 'rxjs';
+import { concatMap, from, map, of, switchMap, throwError } from 'rxjs';
 import *  as logic from './logic';
-import RssFeedEmitter from 'rss-feed-emitter'
+import *  as updater from './updater';
 
 export const name = 'rss-cat'
 export const inject = {
@@ -14,16 +14,16 @@ export const using = ['database'] as const
 export const logger = new Logger('rss-cat')
 
 export interface Config {
-  timeout?: number
-  refresh?: number
-  userAgent?: string
-  rsshubBackend?: string
+  timeout: number
+  refresh: number
+  userAgent: string
+  rsshubBackend: string
 }
 export const Config: Schema<Config> = Schema.object({
   timeout: Schema.number().description('请求数据的最长时间。').default(Time.second * 10),
-  refresh: Schema.number().description('刷新数据的最低时间间隔。').default(Time.minute),
-  userAgent: Schema.string().description('请求时使用的 User Agent。'),
-  rsshubBackend: Schema.string().description('自托管 RSSHub 的后端地址。插件加载时会把 hostname 为 rsshub.app 的rss源替换成你提供的后端hostname。').default('https://rsshub.app'),
+  refresh: Schema.number().description('刷新数据的时间间隔。').default(Time.minute),
+  userAgent: Schema.string().description('请求时使用的 User Agent。').default('NodeJS/koishi-plugin-rss-cat'),
+  rsshubBackend: Schema.string().description('自托管 RSSHub 的后端地址。加载订阅源时会把 hostname 为 rsshub.app 的rss源替换成你提供的后端hostname。').default('https://rsshub.app'),
 })
 
 
@@ -39,14 +39,17 @@ export interface RssSource {
   id: number
   rssLink: string
   subscriber: string[]
-  //lastUpdate: number
-  //lastPost: string
+  /**
+   * 上次已广播的文章的 pubDate
+   */
+  lastBroadcastedpubDate: Date
 }
 export function apply(ctx: Context, config: Config) {
   ctx.model.extend("rsscat.source", {
     id: 'unsigned',
     rssLink: 'string',
-    subscriber: 'list'
+    subscriber: 'list',
+    lastBroadcastedpubDate: 'timestamp'
   }, {
     //https://koishi.chat/zh-CN/api/database/model.html#实例方法
     primary: 'id',
@@ -62,13 +65,21 @@ export function apply(ctx: Context, config: Config) {
     //
   })
 
+  ctx.on('ready', () => {
+    //
+  })
   //定时拉取新消息，有新消息就推送
-  //ctx.throttle 返回一个函数，该函数在指定的周期内最多执行一次。
-  const FetchAndBroadcastNews =
-    ctx.throttle(() => { 
-
-    }, config.refresh, true)
-  ctx.setInterval(() => { FetchAndBroadcastNews() }, config.refresh)
+  ctx.setInterval(async () => { 
+    const DBreturn = await ctx.database.get('rsscat.source', {})
+    from(DBreturn).pipe(
+      updater.UpdateSubOperator(ctx, config)
+    ).
+      subscribe({
+        error: (err) => {
+          logger.warn(err);
+        }
+      })
+  }, config.refresh)
 
   ctx.command('rsscat', '订阅推送，设计为与rsshub搭配使用')
 
@@ -120,7 +131,7 @@ export function apply(ctx: Context, config: Config) {
       if (session.channel.rsscatSource.length === 0) {
         return '该频道还没订阅任何源'
       }
-      let DBreturn = await ctx.database.get('rsscat.source', { id: Number(session.channel.rsscatSource) }, ["id", "rssLink"])
+      let DBreturn = await ctx.database.get('rsscat.source', { id: session.channel.rsscatSource.map(Number) }, ["id", "rssLink"])
       let outputStr = `共订阅了 ${DBreturn.length} 个源：\n`
       DBreturn.forEach((item) => {
         outputStr += `${item.id} - ${item.rssLink}\n`

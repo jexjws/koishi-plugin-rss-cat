@@ -32,7 +32,7 @@ const AddSubOperator = (ctx: Context, session: Session<never, "rsscatSource", Co
                 //如果验证通过，把data丢到下个操作员手上，进入下一步
                 return data
             } catch (err) {
-                err.message = `Bot尝试拉取订阅源时出错：${err.message}`
+                err.message = `Bot 尝试 ping 订阅源时出错：${err.message}`
                 throw err
             }
         }),
@@ -109,7 +109,7 @@ const RemSubOperator = (ctx: Context, session: Session<never, "rsscatSource", Co
                     let DBreturn = await ctx.database.get('rsscat.source', { rssLink: url }, ["id"])
                     return { rssId: DBreturn[0].id, ChannelID: ChannelID }
                 } catch (error) {
-                    throw new Error(`传入的 rssLink_or_rssId 既不是 URL，也不是可作为 ID 的数字：${error.message}`)
+                    throw new Error(`传入的 rssLink_or_rssId 既不是 URL，也不是可作为 ID 的数字。`)
                 }
             }
         }),
@@ -128,7 +128,7 @@ const RemSubOperator = (ctx: Context, session: Session<never, "rsscatSource", Co
             }
 
             session.channel.rsscatSource = session.channel.rsscatSource.filter((id) => id !== String(rssId))
-            console.log(session.channel.rsscatSource,rssId)
+            //console.log(session.channel.rsscatSource,rssId)
             await session.channel.$update()
         })
     )
