@@ -1,4 +1,4 @@
-# koishi-plugin-rss-cat
+# koishi-plugin-rss-cat（开发中）
 
 [![npm](https://img.shields.io/npm/v/koishi-plugin-rss-cat?style=flat-square)](https://www.npmjs.com/package/koishi-plugin-rss-cat)
 
