@@ -20,12 +20,13 @@ const UpdateSubOperator = (ctx: Context, config: Config) => {
             return EMPTY //TODO:向上游文档 https://rxjs.dev/api/index/function/catchError 添加返回空Observable以阻止出错的Observable进入后续流水线的示例
         }),
         mergeMap(async ({ httpRes, RssSource }) => {
-            const feedItems = await getStreamItems(httpRes.data);
+            const feedItems = await getStreamItems(httpRes.data); //先把Rss里面的items取出来
             const newItems = feedItems.filter((item: { pubDate: string | number | Date; }) => {
                 const itemDate = new Date(item.pubDate);
                 return itemDate > RssSource.lastBroadcastedpubDate;
-            });
+            });//把日期早于 lastBroadcastedpubDate 的 item 过滤掉
 
+            //剩下的就是新的，还没广播出去的item
             if (newItems.length > 0) {
 
                 for (const item of newItems) {
