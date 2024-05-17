@@ -19,14 +19,6 @@ const UpdateSubOperator = (ctx: Context, config: Config) => {
             logger.warn(`拉取失败: ${err.message}`)
             return EMPTY //TODO:向上游文档 https://rxjs.dev/api/index/function/catchError 添加返回空Observable以阻止出错的Observable进入后续流水线的示例
         }),
-        filter(awa => {
-            const ALLOWED_MIMES = ['text/html', 'application/xhtml+xml', 'application/xml', 'text/xml']//https://github.com/filipedeschamps/rss-feed-emitter
-            const ContentType_check_pass = !(ALLOWED_MIMES.findIndex((mine) => awa.httpRes.headers.get('content-type').startsWith(mine)) === -1)
-            if (!ContentType_check_pass) {
-                logger.debug(`${awa.RssSource.id} 号源没有通过类型检查：${awa.httpRes.headers.get('content-type')}。停止接下来的流程。`)
-            }
-            return ContentType_check_pass
-        }),
         mergeMap(async ({ httpRes, RssSource }) => {
             const feedItems = await getStreamItems(httpRes.data);
             const newItems = feedItems.filter((item: { pubDate: string | number | Date; }) => {
@@ -35,7 +27,7 @@ const UpdateSubOperator = (ctx: Context, config: Config) => {
             });
 
             if (newItems.length > 0) {
-                
+
                 for (const item of newItems) {
                     const message = `Title: ${item.title}\nLink: ${item.link}`;
                     await (ctx as any).broadcast(RssSource.subscriber, message);
