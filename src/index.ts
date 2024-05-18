@@ -21,7 +21,7 @@ export interface Config {
 }
 export const Config: Schema<Config> = Schema.object({
   timeout: Schema.number().description('请求数据的最长时间。').default(Time.second * 10),
-  refresh: Schema.number().description('刷新数据的时间间隔。').default(Time.minute),
+  refresh: Schema.number().description('刷新数据的时间间隔。').default(Time.minute * 5),
   userAgent: Schema.string().description('请求时使用的 User Agent。').default('NodeJS/koishi-plugin-rss-cat'),
   rsshubBackend: Schema.string().description('自托管 RSSHub 的后端地址。加载订阅源时会把 hostname 为 rsshub.app 的rss源替换成你提供的后端hostname。').default('https://rsshub.app'),
 })
