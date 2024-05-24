@@ -47,7 +47,7 @@ const UpdateSubOperator = (ctx: Context, config: Config) => {
 }
 
 
-async function getRSSbody(rssURL: string, ctx: Context, config: Config) {
+function getRSSbody(rssURL: string, ctx: Context, config: Config) {
     return ctx.http(rssURL.replace(/^https:\/\/rsshub.app/, config.rsshubBackend), { responseType: 'text', headers: { 'user-agent': config.userAgent }, timeout: config.timeout * Time.second })
 }
 
