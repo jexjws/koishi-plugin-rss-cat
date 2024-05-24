@@ -1,0 +1,1842 @@
+[
+    {
+        "title": "德国小蠊起源于南亚",
+        "description": "根据 PNAS 期刊上的一项研究，遍布世界的蟑螂德国小蠊起源于南亚。1776 年瑞典生物学家 Carl Linnaeus 是第一位在欧洲描述蟑螂的科学家，他将其命名为德国小蠊(Blattella germanica)，因此人们认为蟑螂起源于德国。哈佛大学的 Qian Tang 和同事分析了从 17 个国家收集的 281 只德国蟑螂的基因组，这些国家包括澳大利亚、埃塞俄比亚、印度尼西亚、乌克兰和美国。他们利用基因组之间的相似性和差异性来计算不同种群可能建立的时间和地点。他们发现，与德国蟑螂最近的近亲可能是生活在南亚的亚洲小蠊，德国小蠊可能是在 2100 年前分离出来的，1200 年前从南亚向东传播，逐渐扩散到世界各地。",
+        "summary": "根据 PNAS 期刊上的一项研究，遍布世界的蟑螂德国小蠊起源于南亚。1776 年瑞典生物学家 Carl Linnaeus 是第一位在欧洲描述蟑螂的科学家，他将其命名为德国小蠊(Blattella germanica)，因此人们认为蟑螂起源于德国。哈佛大学的 Qian Tang 和同事分析了从 17 个国家收集的 281 只德国蟑螂的基因组，这些国家包括澳大利亚、埃塞俄比亚、印度尼西亚、乌克兰和美国。他们利用基因组之间的相似性和差异性来计算不同种群可能建立的时间和地点。他们发现，与德国蟑螂最近的近亲可能是生活在南亚的亚洲小蠊，德国小蠊可能是在 2100 年前分离出来的，1200 年前从南亚向东传播，逐渐扩散到世界各地。",
+        "date": "2024-05-23T09:20:17.000Z",
+        "pubdate": "2024-05-23T09:20:17.000Z",
+        "pubDate": "2024-05-23T09:20:17.000Z",
+        "link": "https://www.solidot.org/story?sid=78253",
+        "guid": "https://www.solidot.org/story?sid=78253",
+        "author": null,
+        "comments": null,
+        "origlink": null,
+        "image": {},
+        "source": {},
+        "categories": [],
+        "enclosures": [],
+        "rss:@": {},
+        "rss:title": {
+            "@": {},
+            "#": "德国小蠊起源于南亚"
+        },
+        "rss:link": {
+            "@": {},
+            "#": "https://www.solidot.org/story?sid=78253"
+        },
+        "rss:description": {
+            "@": {},
+            "#": "根据 PNAS 期刊上的一项研究，遍布世界的蟑螂德国小蠊起源于南亚。1776 年瑞典生物学家 Carl Linnaeus 是第一位在欧洲描述蟑螂的科学家，他将其命名为德国小蠊(Blattella germanica)，因此人们认为蟑螂起源于德国。哈佛大学的 Qian Tang 和同事分析了从 17 个国家收集的 281 只德国蟑螂的基因组，这些国家包括澳大利亚、埃塞俄比亚、印度尼西亚、乌克兰和美国。他们利用基因组之间的相似性和差异性来计算不同种群可能建立的时间和地点。他们发现，与德国蟑螂最近的近亲可能是生活在南亚的亚洲小蠊，德国小蠊可能是在 2100 年前分离出来的，1200 年前从南亚向东传播，逐渐扩散到世界各地。",
+            "p": {
+                "@": {}
+            }
+        },
+        "rss:pubdate": {
+            "@": {},
+            "#": "Thu, 23 May 2024 17:20:17 +0800"
+        },
+        "meta": {
+            "#ns": [],
+            "@": [],
+            "#xml": {},
+            "#type": "rss",
+            "#version": "2.0",
+            "title": "奇客Solidot–传递最新科技情报",
+            "description": "奇客的知识，重要的东西。",
+            "date": "2024-05-23T15:02:54.000Z",
+            "pubdate": "2024-05-23T15:02:54.000Z",
+            "pubDate": "2024-05-23T15:02:54.000Z",
+            "link": "https://www.solidot.org/",
+            "xmlurl": "https://www.solidot.org/index.rss",
+            "xmlUrl": "https://www.solidot.org/index.rss",
+            "author": null,
+            "language": "zh-cn",
+            "favicon": null,
+            "copyright": null,
+            "generator": null,
+            "cloud": {},
+            "image": {},
+            "categories": [],
+            "rss:@": {},
+            "rss:title": {
+                "@": {},
+                "#": "奇客Solidot–传递最新科技情报"
+            },
+            "rss:link": {
+                "@": {},
+                "#": "https://www.solidot.org/"
+            },
+            "rss:description": {
+                "@": {},
+                "#": "奇客的知识，重要的东西。"
+            },
+            "atom:link": {
+                "@": {
+                    "href": "https://www.solidot.org/index.rss",
+                    "rel": "self",
+                    "type": "application/rss+xml"
+                }
+            },
+            "rss:language": {
+                "@": {},
+                "#": "zh-cn"
+            },
+            "rss:pubdate": {
+                "@": {},
+                "#": "Thu, 23 May 2024 23:02:54 +0800"
+            },
+            "rss:ttl": {
+                "@": {},
+                "#": "20"
+            }
+        }
+    },
+    {
+        "title": "ESA 火星漫游车将使用镅同位素提供动力",
+        "description": "欧洲航天局（ESA）的火星漫游车 Rosalind Franklin 将首次使用镅的放射性衰变提供动力。ESA 的火星任务最初是和俄罗斯航天局合作的，但在俄入侵乌克兰之后 ESA 取消了合作。它此前依赖俄罗斯或美国提供使用 钚-238 的放射性同位素加热装置(RHUs），它从 2009 年起决定研究自己的 RHU。ESA 的 RHU 是世界首个使用镅-241 的同位素加热装置。镅-241 是钚衰变的副产品，功率低于钚，但更丰富更便宜。这意味着 ESA 的 RHU 需要更多的镅-241，但总体上更便宜。",
+        "summary": "欧洲航天局（ESA）的火星漫游车 Rosalind Franklin 将首次使用镅的放射性衰变提供动力。ESA 的火星任务最初是和俄罗斯航天局合作的，但在俄入侵乌克兰之后 ESA 取消了合作。它此前依赖俄罗斯或美国提供使用 钚-238 的放射性同位素加热装置(RHUs），它从 2009 年起决定研究自己的 RHU。ESA 的 RHU 是世界首个使用镅-241 的同位素加热装置。镅-241 是钚衰变的副产品，功率低于钚，但更丰富更便宜。这意味着 ESA 的 RHU 需要更多的镅-241，但总体上更便宜。",
+        "date": "2024-05-23T09:07:55.000Z",
+        "pubdate": "2024-05-23T09:07:55.000Z",
+        "pubDate": "2024-05-23T09:07:55.000Z",
+        "link": "https://www.solidot.org/story?sid=78252",
+        "guid": "https://www.solidot.org/story?sid=78252",
+        "author": null,
+        "comments": null,
+        "origlink": null,
+        "image": {},
+        "source": {},
+        "categories": [],
+        "enclosures": [],
+        "rss:@": {},
+        "rss:title": {
+            "@": {},
+            "#": "ESA 火星漫游车将使用镅同位素提供动力"
+        },
+        "rss:link": {
+            "@": {},
+            "#": "https://www.solidot.org/story?sid=78252"
+        },
+        "rss:description": {
+            "@": {},
+            "#": "欧洲航天局（ESA）的火星漫游车 Rosalind Franklin 将首次使用镅的放射性衰变提供动力。ESA 的火星任务最初是和俄罗斯航天局合作的，但在俄入侵乌克兰之后 ESA 取消了合作。它此前依赖俄罗斯或美国提供使用 钚-238 的放射性同位素加热装置(RHUs），它从 2009 年起决定研究自己的 RHU。ESA 的 RHU 是世界首个使用镅-241 的同位素加热装置。镅-241 是钚衰变的副产品，功率低于钚，但更丰富更便宜。这意味着 ESA 的 RHU 需要更多的镅-241，但总体上更便宜。",
+            "p": {
+                "@": {}
+            }
+        },
+        "rss:pubdate": {
+            "@": {},
+            "#": "Thu, 23 May 2024 17:07:55 +0800"
+        },
+        "meta": {
+            "#ns": [],
+            "@": [],
+            "#xml": {},
+            "#type": "rss",
+            "#version": "2.0",
+            "title": "奇客Solidot–传递最新科技情报",
+            "description": "奇客的知识，重要的东西。",
+            "date": "2024-05-23T15:02:54.000Z",
+            "pubdate": "2024-05-23T15:02:54.000Z",
+            "pubDate": "2024-05-23T15:02:54.000Z",
+            "link": "https://www.solidot.org/",
+            "xmlurl": "https://www.solidot.org/index.rss",
+            "xmlUrl": "https://www.solidot.org/index.rss",
+            "author": null,
+            "language": "zh-cn",
+            "favicon": null,
+            "copyright": null,
+            "generator": null,
+            "cloud": {},
+            "image": {},
+            "categories": [],
+            "rss:@": {},
+            "rss:title": {
+                "@": {},
+                "#": "奇客Solidot–传递最新科技情报"
+            },
+            "rss:link": {
+                "@": {},
+                "#": "https://www.solidot.org/"
+            },
+            "rss:description": {
+                "@": {},
+                "#": "奇客的知识，重要的东西。"
+            },
+            "atom:link": {
+                "@": {
+                    "href": "https://www.solidot.org/index.rss",
+                    "rel": "self",
+                    "type": "application/rss+xml"
+                }
+            },
+            "rss:language": {
+                "@": {},
+                "#": "zh-cn"
+            },
+            "rss:pubdate": {
+                "@": {},
+                "#": "Thu, 23 May 2024 23:02:54 +0800"
+            },
+            "rss:ttl": {
+                "@": {},
+                "#": "20"
+            }
+        }
+    },
+    {
+        "title": "旅行者 1 号恢复发送科学数据",
+        "description": "NASA 宣布，自去年 11 月发生故障以来旅行者 1 号恢复了科学数据的发送，它向地球发送回了其四台科学仪器中的两台的数据，地面团队正在重新校正其余两台仪器。旅行者 1 号距离地球约 240 亿公里，自去年 11 月 14 日起一直向地球传输无法解读的信息。上月初工程师判断是内存损坏导致了问题。发生故障的存储器组位于飞船的飞行数据系统(Flight Data System 或 FDS)。4 月 18 日 NASA 团队将补丁发送到 FDS 内存中的新位置，4 月 20 日他们收到了回复，确认修复有效。5 月 17 日，NASA 团队发送指令让旅行者 1 号恢复发送科学数据，从发送到收到回复需要约 2 天时间。旅行者 1 号科学仪器中的电浆波系统(Plasma Wave System)和磁力计发回了科学数据，另外两台宇宙射线系统和低能带电粒子仪还需等待。",
+        "summary": "NASA 宣布，自去年 11 月发生故障以来旅行者 1 号恢复了科学数据的发送，它向地球发送回了其四台科学仪器中的两台的数据，地面团队正在重新校正其余两台仪器。旅行者 1 号距离地球约 240 亿公里，自去年 11 月 14 日起一直向地球传输无法解读的信息。上月初工程师判断是内存损坏导致了问题。发生故障的存储器组位于飞船的飞行数据系统(Flight Data System 或 FDS)。4 月 18 日 NASA 团队将补丁发送到 FDS 内存中的新位置，4 月 20 日他们收到了回复，确认修复有效。5 月 17 日，NASA 团队发送指令让旅行者 1 号恢复发送科学数据，从发送到收到回复需要约 2 天时间。旅行者 1 号科学仪器中的电浆波系统(Plasma Wave System)和磁力计发回了科学数据，另外两台宇宙射线系统和低能带电粒子仪还需等待。",
+        "date": "2024-05-23T08:17:37.000Z",
+        "pubdate": "2024-05-23T08:17:37.000Z",
+        "pubDate": "2024-05-23T08:17:37.000Z",
+        "link": "https://www.solidot.org/story?sid=78251",
+        "guid": "https://www.solidot.org/story?sid=78251",
+        "author": null,
+        "comments": null,
+        "origlink": null,
+        "image": {},
+        "source": {},
+        "categories": [],
+        "enclosures": [],
+        "rss:@": {},
+        "rss:title": {
+            "@": {},
+            "#": "旅行者 1 号恢复发送科学数据"
+        },
+        "rss:link": {
+            "@": {},
+            "#": "https://www.solidot.org/story?sid=78251"
+        },
+        "rss:description": {
+            "@": {},
+            "#": "NASA 宣布，自去年 11 月发生故障以来旅行者 1 号恢复了科学数据的发送，它向地球发送回了其四台科学仪器中的两台的数据，地面团队正在重新校正其余两台仪器。旅行者 1 号距离地球约 240 亿公里，自去年 11 月 14 日起一直向地球传输无法解读的信息。上月初工程师判断是内存损坏导致了问题。发生故障的存储器组位于飞船的飞行数据系统(Flight Data System 或 FDS)。4 月 18 日 NASA 团队将补丁发送到 FDS 内存中的新位置，4 月 20 日他们收到了回复，确认修复有效。5 月 17 日，NASA 团队发送指令让旅行者 1 号恢复发送科学数据，从发送到收到回复需要约 2 天时间。旅行者 1 号科学仪器中的电浆波系统(Plasma Wave System)和磁力计发回了科学数据，另外两台宇宙射线系统和低能带电粒子仪还需等待。",
+            "p": {
+                "@": {}
+            }
+        },
+        "rss:pubdate": {
+            "@": {},
+            "#": "Thu, 23 May 2024 16:17:37 +0800"
+        },
+        "meta": {
+            "#ns": [],
+            "@": [],
+            "#xml": {},
+            "#type": "rss",
+            "#version": "2.0",
+            "title": "奇客Solidot–传递最新科技情报",
+            "description": "奇客的知识，重要的东西。",
+            "date": "2024-05-23T15:02:54.000Z",
+            "pubdate": "2024-05-23T15:02:54.000Z",
+            "pubDate": "2024-05-23T15:02:54.000Z",
+            "link": "https://www.solidot.org/",
+            "xmlurl": "https://www.solidot.org/index.rss",
+            "xmlUrl": "https://www.solidot.org/index.rss",
+            "author": null,
+            "language": "zh-cn",
+            "favicon": null,
+            "copyright": null,
+            "generator": null,
+            "cloud": {},
+            "image": {},
+            "categories": [],
+            "rss:@": {},
+            "rss:title": {
+                "@": {},
+                "#": "奇客Solidot–传递最新科技情报"
+            },
+            "rss:link": {
+                "@": {},
+                "#": "https://www.solidot.org/"
+            },
+            "rss:description": {
+                "@": {},
+                "#": "奇客的知识，重要的东西。"
+            },
+            "atom:link": {
+                "@": {
+                    "href": "https://www.solidot.org/index.rss",
+                    "rel": "self",
+                    "type": "application/rss+xml"
+                }
+            },
+            "rss:language": {
+                "@": {},
+                "#": "zh-cn"
+            },
+            "rss:pubdate": {
+                "@": {},
+                "#": "Thu, 23 May 2024 23:02:54 +0800"
+            },
+            "rss:ttl": {
+                "@": {},
+                "#": "20"
+            }
+        }
+    },
+    {
+        "title": "Microsoft Edge 将阻止在工作期间截图",
+        "description": "微软的 Recall 将记录屏幕上的一切活动，但不是所有活动都会一视同仁。微软表示 Edge 浏览器将引入阻止在工作时屏幕截图的功能，此举旨在防止 Microsoft Edge for Business 用户与竞争对手、亲朋好友和记者分享屏幕截图。它好像不知道每个人身上都有智能手机，而智能手机都有高清摄像头。微软表示，防止屏幕截图功能将在未来几个月提供给向客户。微软还将推出强制 Edge for Business 用户自动更新的功能，该功能将在未来几周进入预览阶段。",
+        "summary": "微软的 Recall 将记录屏幕上的一切活动，但不是所有活动都会一视同仁。微软表示 Edge 浏览器将引入阻止在工作时屏幕截图的功能，此举旨在防止 Microsoft Edge for Business 用户与竞争对手、亲朋好友和记者分享屏幕截图。它好像不知道每个人身上都有智能手机，而智能手机都有高清摄像头。微软表示，防止屏幕截图功能将在未来几个月提供给向客户。微软还将推出强制 Edge for Business 用户自动更新的功能，该功能将在未来几周进入预览阶段。",
+        "date": "2024-05-23T07:37:45.000Z",
+        "pubdate": "2024-05-23T07:37:45.000Z",
+        "pubDate": "2024-05-23T07:37:45.000Z",
+        "link": "https://www.solidot.org/story?sid=78250",
+        "guid": "https://www.solidot.org/story?sid=78250",
+        "author": null,
+        "comments": null,
+        "origlink": null,
+        "image": {},
+        "source": {},
+        "categories": [],
+        "enclosures": [],
+        "rss:@": {},
+        "rss:title": {
+            "@": {},
+            "#": "Microsoft Edge 将阻止在工作期间截图"
+        },
+        "rss:link": {
+            "@": {},
+            "#": "https://www.solidot.org/story?sid=78250"
+        },
+        "rss:description": {
+            "@": {},
+            "#": "微软的 Recall 将记录屏幕上的一切活动，但不是所有活动都会一视同仁。微软表示 Edge 浏览器将引入阻止在工作时屏幕截图的功能，此举旨在防止 Microsoft Edge for Business 用户与竞争对手、亲朋好友和记者分享屏幕截图。它好像不知道每个人身上都有智能手机，而智能手机都有高清摄像头。微软表示，防止屏幕截图功能将在未来几个月提供给向客户。微软还将推出强制 Edge for Business 用户自动更新的功能，该功能将在未来几周进入预览阶段。",
+            "p": {
+                "@": {}
+            }
+        },
+        "rss:pubdate": {
+            "@": {},
+            "#": "Thu, 23 May 2024 15:37:45 +0800"
+        },
+        "meta": {
+            "#ns": [],
+            "@": [],
+            "#xml": {},
+            "#type": "rss",
+            "#version": "2.0",
+            "title": "奇客Solidot–传递最新科技情报",
+            "description": "奇客的知识，重要的东西。",
+            "date": "2024-05-23T15:02:54.000Z",
+            "pubdate": "2024-05-23T15:02:54.000Z",
+            "pubDate": "2024-05-23T15:02:54.000Z",
+            "link": "https://www.solidot.org/",
+            "xmlurl": "https://www.solidot.org/index.rss",
+            "xmlUrl": "https://www.solidot.org/index.rss",
+            "author": null,
+            "language": "zh-cn",
+            "favicon": null,
+            "copyright": null,
+            "generator": null,
+            "cloud": {},
+            "image": {},
+            "categories": [],
+            "rss:@": {},
+            "rss:title": {
+                "@": {},
+                "#": "奇客Solidot–传递最新科技情报"
+            },
+            "rss:link": {
+                "@": {},
+                "#": "https://www.solidot.org/"
+            },
+            "rss:description": {
+                "@": {},
+                "#": "奇客的知识，重要的东西。"
+            },
+            "atom:link": {
+                "@": {
+                    "href": "https://www.solidot.org/index.rss",
+                    "rel": "self",
+                    "type": "application/rss+xml"
+                }
+            },
+            "rss:language": {
+                "@": {},
+                "#": "zh-cn"
+            },
+            "rss:pubdate": {
+                "@": {},
+                "#": "Thu, 23 May 2024 23:02:54 +0800"
+            },
+            "rss:ttl": {
+                "@": {},
+                "#": "20"
+            }
+        }
+    },
+    {
+        "title": "田鼠的一夫一妻制与激素生成细胞相关",
+        "description": "根据发表在《自然》期刊上的一项研究，田鼠的一夫一妻制与激素生成细胞相关。鹿鼠(Peromyscus maniculatus)和田鼠(Peromyscus polionotus)是近亲，但前者滥交，而后者却是一夫一妻制。为什么它们的行为如此不同？研究人员检查它们的肾上腺。田鼠的肾上腺比鹿鼠重六倍。对肾上腺细胞的遗传分析显示，名为 Akr1c18 的基因在田鼠中比鹿鼠活跃得多。这种基因编码的酶有助于产生一种很少被研究的激素，即 20⍺-OHP,，这种激素也存在于人类和其他哺乳动物中。研究人员观察到，20⍺-OHP 激素的增加促进了两种小鼠的养育行为。新发现为人类的育儿行为和挑战提供了见解。",
+        "summary": "根据发表在《自然》期刊上的一项研究，田鼠的一夫一妻制与激素生成细胞相关。鹿鼠(Peromyscus maniculatus)和田鼠(Peromyscus polionotus)是近亲，但前者滥交，而后者却是一夫一妻制。为什么它们的行为如此不同？研究人员检查它们的肾上腺。田鼠的肾上腺比鹿鼠重六倍。对肾上腺细胞的遗传分析显示，名为 Akr1c18 的基因在田鼠中比鹿鼠活跃得多。这种基因编码的酶有助于产生一种很少被研究的激素，即 20⍺-OHP,，这种激素也存在于人类和其他哺乳动物中。研究人员观察到，20⍺-OHP 激素的增加促进了两种小鼠的养育行为。新发现为人类的育儿行为和挑战提供了见解。",
+        "date": "2024-05-23T06:45:24.000Z",
+        "pubdate": "2024-05-23T06:45:24.000Z",
+        "pubDate": "2024-05-23T06:45:24.000Z",
+        "link": "https://www.solidot.org/story?sid=78249",
+        "guid": "https://www.solidot.org/story?sid=78249",
+        "author": null,
+        "comments": null,
+        "origlink": null,
+        "image": {},
+        "source": {},
+        "categories": [],
+        "enclosures": [],
+        "rss:@": {},
+        "rss:title": {
+            "@": {},
+            "#": "田鼠的一夫一妻制与激素生成细胞相关"
+        },
+        "rss:link": {
+            "@": {},
+            "#": "https://www.solidot.org/story?sid=78249"
+        },
+        "rss:description": {
+            "@": {},
+            "#": "根据发表在《自然》期刊上的一项研究，田鼠的一夫一妻制与激素生成细胞相关。鹿鼠(Peromyscus maniculatus)和田鼠(Peromyscus polionotus)是近亲，但前者滥交，而后者却是一夫一妻制。为什么它们的行为如此不同？研究人员检查它们的肾上腺。田鼠的肾上腺比鹿鼠重六倍。对肾上腺细胞的遗传分析显示，名为 Akr1c18 的基因在田鼠中比鹿鼠活跃得多。这种基因编码的酶有助于产生一种很少被研究的激素，即 20⍺-OHP,，这种激素也存在于人类和其他哺乳动物中。研究人员观察到，20⍺-OHP 激素的增加促进了两种小鼠的养育行为。新发现为人类的育儿行为和挑战提供了见解。",
+            "p": {
+                "@": {}
+            }
+        },
+        "rss:pubdate": {
+            "@": {},
+            "#": "Thu, 23 May 2024 14:45:24 +0800"
+        },
+        "meta": {
+            "#ns": [],
+            "@": [],
+            "#xml": {},
+            "#type": "rss",
+            "#version": "2.0",
+            "title": "奇客Solidot–传递最新科技情报",
+            "description": "奇客的知识，重要的东西。",
+            "date": "2024-05-23T15:02:54.000Z",
+            "pubdate": "2024-05-23T15:02:54.000Z",
+            "pubDate": "2024-05-23T15:02:54.000Z",
+            "link": "https://www.solidot.org/",
+            "xmlurl": "https://www.solidot.org/index.rss",
+            "xmlUrl": "https://www.solidot.org/index.rss",
+            "author": null,
+            "language": "zh-cn",
+            "favicon": null,
+            "copyright": null,
+            "generator": null,
+            "cloud": {},
+            "image": {},
+            "categories": [],
+            "rss:@": {},
+            "rss:title": {
+                "@": {},
+                "#": "奇客Solidot–传递最新科技情报"
+            },
+            "rss:link": {
+                "@": {},
+                "#": "https://www.solidot.org/"
+            },
+            "rss:description": {
+                "@": {},
+                "#": "奇客的知识，重要的东西。"
+            },
+            "atom:link": {
+                "@": {
+                    "href": "https://www.solidot.org/index.rss",
+                    "rel": "self",
+                    "type": "application/rss+xml"
+                }
+            },
+            "rss:language": {
+                "@": {},
+                "#": "zh-cn"
+            },
+            "rss:pubdate": {
+                "@": {},
+                "#": "Thu, 23 May 2024 23:02:54 +0800"
+            },
+            "rss:ttl": {
+                "@": {},
+                "#": "20"
+            }
+        }
+    },
+    {
+        "title": "Kotlin 2.0.0 释出",
+        "description": "JetBrains 开发的面向 JVM 的语言释出 Kotlin 2.0.0 版本。主要新特性包括：合并了 Jetpack Compose 编译器，使用 invokedynamic 生成 lambda 函数， kotlinx-metadata-jvm 库稳定，用 Objective-C 方法解决 Kotlin/Native 冲突，支持 Kotlin/Wasm 命名导出，等等。",
+        "summary": "JetBrains 开发的面向 JVM 的语言释出 Kotlin 2.0.0 版本。主要新特性包括：合并了 Jetpack Compose 编译器，使用 invokedynamic 生成 lambda 函数， kotlinx-metadata-jvm 库稳定，用 Objective-C 方法解决 Kotlin/Native 冲突，支持 Kotlin/Wasm 命名导出，等等。",
+        "date": "2024-05-23T06:21:45.000Z",
+        "pubdate": "2024-05-23T06:21:45.000Z",
+        "pubDate": "2024-05-23T06:21:45.000Z",
+        "link": "https://www.solidot.org/story?sid=78248",
+        "guid": "https://www.solidot.org/story?sid=78248",
+        "author": null,
+        "comments": null,
+        "origlink": null,
+        "image": {},
+        "source": {},
+        "categories": [],
+        "enclosures": [],
+        "rss:@": {},
+        "rss:title": {
+            "@": {},
+            "#": "Kotlin 2.0.0 释出"
+        },
+        "rss:link": {
+            "@": {},
+            "#": "https://www.solidot.org/story?sid=78248"
+        },
+        "rss:description": {
+            "@": {},
+            "#": "JetBrains 开发的面向 JVM 的语言释出 Kotlin 2.0.0 版本。主要新特性包括：合并了 Jetpack Compose 编译器，使用 invokedynamic 生成 lambda 函数， kotlinx-metadata-jvm 库稳定，用 Objective-C 方法解决 Kotlin/Native 冲突，支持 Kotlin/Wasm 命名导出，等等。",
+            "p": {
+                "@": {}
+            }
+        },
+        "rss:pubdate": {
+            "@": {},
+            "#": "Thu, 23 May 2024 14:21:45 +0800"
+        },
+        "meta": {
+            "#ns": [],
+            "@": [],
+            "#xml": {},
+            "#type": "rss",
+            "#version": "2.0",
+            "title": "奇客Solidot–传递最新科技情报",
+            "description": "奇客的知识，重要的东西。",
+            "date": "2024-05-23T15:02:54.000Z",
+            "pubdate": "2024-05-23T15:02:54.000Z",
+            "pubDate": "2024-05-23T15:02:54.000Z",
+            "link": "https://www.solidot.org/",
+            "xmlurl": "https://www.solidot.org/index.rss",
+            "xmlUrl": "https://www.solidot.org/index.rss",
+            "author": null,
+            "language": "zh-cn",
+            "favicon": null,
+            "copyright": null,
+            "generator": null,
+            "cloud": {},
+            "image": {},
+            "categories": [],
+            "rss:@": {},
+            "rss:title": {
+                "@": {},
+                "#": "奇客Solidot–传递最新科技情报"
+            },
+            "rss:link": {
+                "@": {},
+                "#": "https://www.solidot.org/"
+            },
+            "rss:description": {
+                "@": {},
+                "#": "奇客的知识，重要的东西。"
+            },
+            "atom:link": {
+                "@": {
+                    "href": "https://www.solidot.org/index.rss",
+                    "rel": "self",
+                    "type": "application/rss+xml"
+                }
+            },
+            "rss:language": {
+                "@": {},
+                "#": "zh-cn"
+            },
+            "rss:pubdate": {
+                "@": {},
+                "#": "Thu, 23 May 2024 23:02:54 +0800"
+            },
+            "rss:ttl": {
+                "@": {},
+                "#": "20"
+            }
+        }
+    },
+    {
+        "title": "Mozilla 对 Windows Recall 表达担忧",
+        "description": "微软刚刚宣布的 Windows Recall 引发了隐私方面的担忧和争议。它的工作原理十分简单：Windows 系统每数秒钟截取用户活动屏幕的快照，将其储存在硬盘上。用户之后可以浏览快照，选择某些内容进行互动。Mozilla 首席产品官 Steve Teixeira 对此表达了担忧。他表示，从浏览器角度，有些数据应保存，有些不应该。Recall 不仅储存浏览器历史记录，还储存用户在浏览器上输入的数据。虽然数据以加密格式储存，但这些储存的数据代表了网络罪犯的新攻击矢量和共享计算机的新隐私担忧。微软再次扮演了看门人角色，它决定了 Windows 上哪些浏览器是赢家和输家，它显然更青睐自家的浏览器 MS Edge。Edge 允许用户阻止 Recall 看到特定网站和私密浏览活动。其它基于 Chromium 的浏览器也能防止 Recall 查看私密浏览活动，但无法阻止其快照敏感网站如金融网站。微软没有为 Firefox 等浏览器提供相同程度的保护，也没有在 Recall 上与 Mozilla 进行合作。",
+        "summary": "微软刚刚宣布的 Windows Recall 引发了隐私方面的担忧和争议。它的工作原理十分简单：Windows 系统每数秒钟截取用户活动屏幕的快照，将其储存在硬盘上。用户之后可以浏览快照，选择某些内容进行互动。Mozilla 首席产品官 Steve Teixeira 对此表达了担忧。他表示，从浏览器角度，有些数据应保存，有些不应该。Recall 不仅储存浏览器历史记录，还储存用户在浏览器上输入的数据。虽然数据以加密格式储存，但这些储存的数据代表了网络罪犯的新攻击矢量和共享计算机的新隐私担忧。微软再次扮演了看门人角色，它决定了 Windows 上哪些浏览器是赢家和输家，它显然更青睐自家的浏览器 MS Edge。Edge 允许用户阻止 Recall 看到特定网站和私密浏览活动。其它基于 Chromium 的浏览器也能防止 Recall 查看私密浏览活动，但无法阻止其快照敏感网站如金融网站。微软没有为 Firefox 等浏览器提供相同程度的保护，也没有在 Recall 上与 Mozilla 进行合作。",
+        "date": "2024-05-23T06:00:05.000Z",
+        "pubdate": "2024-05-23T06:00:05.000Z",
+        "pubDate": "2024-05-23T06:00:05.000Z",
+        "link": "https://www.solidot.org/story?sid=78247",
+        "guid": "https://www.solidot.org/story?sid=78247",
+        "author": null,
+        "comments": null,
+        "origlink": null,
+        "image": {},
+        "source": {},
+        "categories": [],
+        "enclosures": [],
+        "rss:@": {},
+        "rss:title": {
+            "@": {},
+            "#": "Mozilla 对 Windows Recall 表达担忧"
+        },
+        "rss:link": {
+            "@": {},
+            "#": "https://www.solidot.org/story?sid=78247"
+        },
+        "rss:description": {
+            "@": {},
+            "#": "微软刚刚宣布的 Windows Recall 引发了隐私方面的担忧和争议。它的工作原理十分简单：Windows 系统每数秒钟截取用户活动屏幕的快照，将其储存在硬盘上。用户之后可以浏览快照，选择某些内容进行互动。Mozilla 首席产品官 Steve Teixeira 对此表达了担忧。他表示，从浏览器角度，有些数据应保存，有些不应该。Recall 不仅储存浏览器历史记录，还储存用户在浏览器上输入的数据。虽然数据以加密格式储存，但这些储存的数据代表了网络罪犯的新攻击矢量和共享计算机的新隐私担忧。微软再次扮演了看门人角色，它决定了 Windows 上哪些浏览器是赢家和输家，它显然更青睐自家的浏览器 MS Edge。Edge 允许用户阻止 Recall 看到特定网站和私密浏览活动。其它基于 Chromium 的浏览器也能防止 Recall 查看私密浏览活动，但无法阻止其快照敏感网站如金融网站。微软没有为 Firefox 等浏览器提供相同程度的保护，也没有在 Recall 上与 Mozilla 进行合作。",
+            "p": {
+                "@": {}
+            }
+        },
+        "rss:pubdate": {
+            "@": {},
+            "#": "Thu, 23 May 2024 14:00:05 +0800"
+        },
+        "meta": {
+            "#ns": [],
+            "@": [],
+            "#xml": {},
+            "#type": "rss",
+            "#version": "2.0",
+            "title": "奇客Solidot–传递最新科技情报",
+            "description": "奇客的知识，重要的东西。",
+            "date": "2024-05-23T15:02:54.000Z",
+            "pubdate": "2024-05-23T15:02:54.000Z",
+            "pubDate": "2024-05-23T15:02:54.000Z",
+            "link": "https://www.solidot.org/",
+            "xmlurl": "https://www.solidot.org/index.rss",
+            "xmlUrl": "https://www.solidot.org/index.rss",
+            "author": null,
+            "language": "zh-cn",
+            "favicon": null,
+            "copyright": null,
+            "generator": null,
+            "cloud": {},
+            "image": {},
+            "categories": [],
+            "rss:@": {},
+            "rss:title": {
+                "@": {},
+                "#": "奇客Solidot–传递最新科技情报"
+            },
+            "rss:link": {
+                "@": {},
+                "#": "https://www.solidot.org/"
+            },
+            "rss:description": {
+                "@": {},
+                "#": "奇客的知识，重要的东西。"
+            },
+            "atom:link": {
+                "@": {
+                    "href": "https://www.solidot.org/index.rss",
+                    "rel": "self",
+                    "type": "application/rss+xml"
+                }
+            },
+            "rss:language": {
+                "@": {},
+                "#": "zh-cn"
+            },
+            "rss:pubdate": {
+                "@": {},
+                "#": "Thu, 23 May 2024 23:02:54 +0800"
+            },
+            "rss:ttl": {
+                "@": {},
+                "#": "20"
+            }
+        }
+    },
+    {
+        "title": "台积电的光刻机安装了远程自毁功能",
+        "description": "世界最大的先进芯片代工厂台积电为其最先进光刻机——来自荷兰 ASML 公司的极紫外光刻机——安装了远程自毁功能，以防万一紧急情况下使用。据彭博社报道，此举是为了缓解美国的担忧。",
+        "summary": "世界最大的先进芯片代工厂台积电为其最先进光刻机——来自荷兰 ASML 公司的极紫外光刻机——安装了远程自毁功能，以防万一紧急情况下使用。据彭博社报道，此举是为了缓解美国的担忧。",
+        "date": "2024-05-22T15:44:42.000Z",
+        "pubdate": "2024-05-22T15:44:42.000Z",
+        "pubDate": "2024-05-22T15:44:42.000Z",
+        "link": "https://www.solidot.org/story?sid=78246",
+        "guid": "https://www.solidot.org/story?sid=78246",
+        "author": null,
+        "comments": null,
+        "origlink": null,
+        "image": {},
+        "source": {},
+        "categories": [],
+        "enclosures": [],
+        "rss:@": {},
+        "rss:title": {
+            "@": {},
+            "#": "台积电的光刻机安装了远程自毁功能"
+        },
+        "rss:link": {
+            "@": {},
+            "#": "https://www.solidot.org/story?sid=78246"
+        },
+        "rss:description": {
+            "@": {},
+            "#": "世界最大的先进芯片代工厂台积电为其最先进光刻机——来自荷兰 ASML 公司的极紫外光刻机——安装了远程自毁功能，以防万一紧急情况下使用。据彭博社报道，此举是为了缓解美国的担忧。",
+            "p": {
+                "@": {}
+            }
+        },
+        "rss:pubdate": {
+            "@": {},
+            "#": "Wed, 22 May 2024 23:44:42 +0800"
+        },
+        "meta": {
+            "#ns": [],
+            "@": [],
+            "#xml": {},
+            "#type": "rss",
+            "#version": "2.0",
+            "title": "奇客Solidot–传递最新科技情报",
+            "description": "奇客的知识，重要的东西。",
+            "date": "2024-05-23T15:02:54.000Z",
+            "pubdate": "2024-05-23T15:02:54.000Z",
+            "pubDate": "2024-05-23T15:02:54.000Z",
+            "link": "https://www.solidot.org/",
+            "xmlurl": "https://www.solidot.org/index.rss",
+            "xmlUrl": "https://www.solidot.org/index.rss",
+            "author": null,
+            "language": "zh-cn",
+            "favicon": null,
+            "copyright": null,
+            "generator": null,
+            "cloud": {},
+            "image": {},
+            "categories": [],
+            "rss:@": {},
+            "rss:title": {
+                "@": {},
+                "#": "奇客Solidot–传递最新科技情报"
+            },
+            "rss:link": {
+                "@": {},
+                "#": "https://www.solidot.org/"
+            },
+            "rss:description": {
+                "@": {},
+                "#": "奇客的知识，重要的东西。"
+            },
+            "atom:link": {
+                "@": {
+                    "href": "https://www.solidot.org/index.rss",
+                    "rel": "self",
+                    "type": "application/rss+xml"
+                }
+            },
+            "rss:language": {
+                "@": {},
+                "#": "zh-cn"
+            },
+            "rss:pubdate": {
+                "@": {},
+                "#": "Thu, 23 May 2024 23:02:54 +0800"
+            },
+            "rss:ttl": {
+                "@": {},
+                "#": "20"
+            }
+        }
+    },
+    {
+        "title": "Windows 11 6 月更新将在中国区设备上安装微软管家",
+        "description": "你是不是还没有安装微软电脑管家（PC Manager）？下一个月微软将为你主动安装上。根据微软上周释出的 Windows 11 预览版补丁，其中一项变化是“This update adds PC Manager to devices in China”。微软电脑管家由微软中国团队开发，其功能包括清理系统碎片，深度清理系统存储空间，减少广告及应用弹窗，快速检测电脑异常，等等。对很多 Windows 用户而言，如今微软本身就是弹窗的主要来源。",
+        "summary": "你是不是还没有安装微软电脑管家（PC Manager）？下一个月微软将为你主动安装上。根据微软上周释出的 Windows 11 预览版补丁，其中一项变化是“This update adds PC Manager to devices in China”。微软电脑管家由微软中国团队开发，其功能包括清理系统碎片，深度清理系统存储空间，减少广告及应用弹窗，快速检测电脑异常，等等。对很多 Windows 用户而言，如今微软本身就是弹窗的主要来源。",
+        "date": "2024-05-22T15:31:22.000Z",
+        "pubdate": "2024-05-22T15:31:22.000Z",
+        "pubDate": "2024-05-22T15:31:22.000Z",
+        "link": "https://www.solidot.org/story?sid=78245",
+        "guid": "https://www.solidot.org/story?sid=78245",
+        "author": null,
+        "comments": null,
+        "origlink": null,
+        "image": {},
+        "source": {},
+        "categories": [],
+        "enclosures": [],
+        "rss:@": {},
+        "rss:title": {
+            "@": {},
+            "#": "Windows 11 6 月更新将在中国区设备上安装微软管家"
+        },
+        "rss:link": {
+            "@": {},
+            "#": "https://www.solidot.org/story?sid=78245"
+        },
+        "rss:description": {
+            "@": {},
+            "#": "你是不是还没有安装微软电脑管家（PC Manager）？下一个月微软将为你主动安装上。根据微软上周释出的 Windows 11 预览版补丁，其中一项变化是“This update adds PC Manager to devices in China”。微软电脑管家由微软中国团队开发，其功能包括清理系统碎片，深度清理系统存储空间，减少广告及应用弹窗，快速检测电脑异常，等等。对很多 Windows 用户而言，如今微软本身就是弹窗的主要来源。",
+            "p": {
+                "@": {}
+            }
+        },
+        "rss:pubdate": {
+            "@": {},
+            "#": "Wed, 22 May 2024 23:31:22 +0800"
+        },
+        "meta": {
+            "#ns": [],
+            "@": [],
+            "#xml": {},
+            "#type": "rss",
+            "#version": "2.0",
+            "title": "奇客Solidot–传递最新科技情报",
+            "description": "奇客的知识，重要的东西。",
+            "date": "2024-05-23T15:02:54.000Z",
+            "pubdate": "2024-05-23T15:02:54.000Z",
+            "pubDate": "2024-05-23T15:02:54.000Z",
+            "link": "https://www.solidot.org/",
+            "xmlurl": "https://www.solidot.org/index.rss",
+            "xmlUrl": "https://www.solidot.org/index.rss",
+            "author": null,
+            "language": "zh-cn",
+            "favicon": null,
+            "copyright": null,
+            "generator": null,
+            "cloud": {},
+            "image": {},
+            "categories": [],
+            "rss:@": {},
+            "rss:title": {
+                "@": {},
+                "#": "奇客Solidot–传递最新科技情报"
+            },
+            "rss:link": {
+                "@": {},
+                "#": "https://www.solidot.org/"
+            },
+            "rss:description": {
+                "@": {},
+                "#": "奇客的知识，重要的东西。"
+            },
+            "atom:link": {
+                "@": {
+                    "href": "https://www.solidot.org/index.rss",
+                    "rel": "self",
+                    "type": "application/rss+xml"
+                }
+            },
+            "rss:language": {
+                "@": {},
+                "#": "zh-cn"
+            },
+            "rss:pubdate": {
+                "@": {},
+                "#": "Thu, 23 May 2024 23:02:54 +0800"
+            },
+            "rss:ttl": {
+                "@": {},
+                "#": "20"
+            }
+        }
+    },
+    {
+        "title": "Meta AI 首席科学家认为大模型达不到人类水平的智能",
+        "description": "Meta AI 首席科学家 Yann LeCun 认为现有的大模型永远也达不到人类水平的智能。他说，大模型对逻辑理解有限，不理解物理世界，没有持久记忆，无法对术语任何合理的定义进行推理，无法分层制定计划。他反对在追寻人类水平智能的过程中依靠先进的大模型，因为大模型只有在正确的训练数据训练后才能正确回答提示，它“本质上是不安全的”。他正致力于开发新一代 AI 系统去实现人类水平的智能，这个过程可能需要十年时间。LeCun 在 Meta 的 Fundamental AI Research (Fair) 实验室有一支 500 人的团队，使用“世界建模（world modelling）”的方法开发新一代 AI，它能发展出常识，以类似人类的方式了解世界如何运作。",
+        "summary": "Meta AI 首席科学家 Yann LeCun 认为现有的大模型永远也达不到人类水平的智能。他说，大模型对逻辑理解有限，不理解物理世界，没有持久记忆，无法对术语任何合理的定义进行推理，无法分层制定计划。他反对在追寻人类水平智能的过程中依靠先进的大模型，因为大模型只有在正确的训练数据训练后才能正确回答提示，它“本质上是不安全的”。他正致力于开发新一代 AI 系统去实现人类水平的智能，这个过程可能需要十年时间。LeCun 在 Meta 的 Fundamental AI Research (Fair) 实验室有一支 500 人的团队，使用“世界建模（world modelling）”的方法开发新一代 AI，它能发展出常识，以类似人类的方式了解世界如何运作。",
+        "date": "2024-05-22T15:16:40.000Z",
+        "pubdate": "2024-05-22T15:16:40.000Z",
+        "pubDate": "2024-05-22T15:16:40.000Z",
+        "link": "https://www.solidot.org/story?sid=78244",
+        "guid": "https://www.solidot.org/story?sid=78244",
+        "author": null,
+        "comments": null,
+        "origlink": null,
+        "image": {},
+        "source": {},
+        "categories": [],
+        "enclosures": [],
+        "rss:@": {},
+        "rss:title": {
+            "@": {},
+            "#": "Meta AI 首席科学家认为大模型达不到人类水平的智能"
+        },
+        "rss:link": {
+            "@": {},
+            "#": "https://www.solidot.org/story?sid=78244"
+        },
+        "rss:description": {
+            "@": {},
+            "#": "Meta AI 首席科学家 Yann LeCun 认为现有的大模型永远也达不到人类水平的智能。他说，大模型对逻辑理解有限，不理解物理世界，没有持久记忆，无法对术语任何合理的定义进行推理，无法分层制定计划。他反对在追寻人类水平智能的过程中依靠先进的大模型，因为大模型只有在正确的训练数据训练后才能正确回答提示，它“本质上是不安全的”。他正致力于开发新一代 AI 系统去实现人类水平的智能，这个过程可能需要十年时间。LeCun 在 Meta 的 Fundamental AI Research (Fair) 实验室有一支 500 人的团队，使用“世界建模（world modelling）”的方法开发新一代 AI，它能发展出常识，以类似人类的方式了解世界如何运作。",
+            "p": {
+                "@": {}
+            }
+        },
+        "rss:pubdate": {
+            "@": {},
+            "#": "Wed, 22 May 2024 23:16:40 +0800"
+        },
+        "meta": {
+            "#ns": [],
+            "@": [],
+            "#xml": {},
+            "#type": "rss",
+            "#version": "2.0",
+            "title": "奇客Solidot–传递最新科技情报",
+            "description": "奇客的知识，重要的东西。",
+            "date": "2024-05-23T15:02:54.000Z",
+            "pubdate": "2024-05-23T15:02:54.000Z",
+            "pubDate": "2024-05-23T15:02:54.000Z",
+            "link": "https://www.solidot.org/",
+            "xmlurl": "https://www.solidot.org/index.rss",
+            "xmlUrl": "https://www.solidot.org/index.rss",
+            "author": null,
+            "language": "zh-cn",
+            "favicon": null,
+            "copyright": null,
+            "generator": null,
+            "cloud": {},
+            "image": {},
+            "categories": [],
+            "rss:@": {},
+            "rss:title": {
+                "@": {},
+                "#": "奇客Solidot–传递最新科技情报"
+            },
+            "rss:link": {
+                "@": {},
+                "#": "https://www.solidot.org/"
+            },
+            "rss:description": {
+                "@": {},
+                "#": "奇客的知识，重要的东西。"
+            },
+            "atom:link": {
+                "@": {
+                    "href": "https://www.solidot.org/index.rss",
+                    "rel": "self",
+                    "type": "application/rss+xml"
+                }
+            },
+            "rss:language": {
+                "@": {},
+                "#": "zh-cn"
+            },
+            "rss:pubdate": {
+                "@": {},
+                "#": "Thu, 23 May 2024 23:02:54 +0800"
+            },
+            "rss:ttl": {
+                "@": {},
+                "#": "20"
+            }
+        }
+    },
+    {
+        "title": "加州可更新能源发电量连续 45 天超过需求",
+        "description": "加州可更新能源的发电量已经连续 45 天超过主电网需求。跟踪加州可更新能源的斯坦福土木与环境工程教授 Mark Z. Jacobson 称，加州的风能、太阳能和水力发电量过去 75 天有 69 天超过主电网需求，连续 45 天超过需求。加州计划到 2045 年实现电力生产净零排放。Jacobson 教授预测该计划有望提前 10 年到 2035 年实现。",
+        "summary": "加州可更新能源的发电量已经连续 45 天超过主电网需求。跟踪加州可更新能源的斯坦福土木与环境工程教授 Mark Z. Jacobson 称，加州的风能、太阳能和水力发电量过去 75 天有 69 天超过主电网需求，连续 45 天超过需求。加州计划到 2045 年实现电力生产净零排放。Jacobson 教授预测该计划有望提前 10 年到 2035 年实现。",
+        "date": "2024-05-22T14:35:21.000Z",
+        "pubdate": "2024-05-22T14:35:21.000Z",
+        "pubDate": "2024-05-22T14:35:21.000Z",
+        "link": "https://www.solidot.org/story?sid=78243",
+        "guid": "https://www.solidot.org/story?sid=78243",
+        "author": null,
+        "comments": null,
+        "origlink": null,
+        "image": {},
+        "source": {},
+        "categories": [],
+        "enclosures": [],
+        "rss:@": {},
+        "rss:title": {
+            "@": {},
+            "#": "加州可更新能源发电量连续 45 天超过需求"
+        },
+        "rss:link": {
+            "@": {},
+            "#": "https://www.solidot.org/story?sid=78243"
+        },
+        "rss:description": {
+            "@": {},
+            "#": "加州可更新能源的发电量已经连续 45 天超过主电网需求。跟踪加州可更新能源的斯坦福土木与环境工程教授 Mark Z. Jacobson 称，加州的风能、太阳能和水力发电量过去 75 天有 69 天超过主电网需求，连续 45 天超过需求。加州计划到 2045 年实现电力生产净零排放。Jacobson 教授预测该计划有望提前 10 年到 2035 年实现。",
+            "p": {
+                "@": {}
+            }
+        },
+        "rss:pubdate": {
+            "@": {},
+            "#": "Wed, 22 May 2024 22:35:21 +0800"
+        },
+        "meta": {
+            "#ns": [],
+            "@": [],
+            "#xml": {},
+            "#type": "rss",
+            "#version": "2.0",
+            "title": "奇客Solidot–传递最新科技情报",
+            "description": "奇客的知识，重要的东西。",
+            "date": "2024-05-23T15:02:54.000Z",
+            "pubdate": "2024-05-23T15:02:54.000Z",
+            "pubDate": "2024-05-23T15:02:54.000Z",
+            "link": "https://www.solidot.org/",
+            "xmlurl": "https://www.solidot.org/index.rss",
+            "xmlUrl": "https://www.solidot.org/index.rss",
+            "author": null,
+            "language": "zh-cn",
+            "favicon": null,
+            "copyright": null,
+            "generator": null,
+            "cloud": {},
+            "image": {},
+            "categories": [],
+            "rss:@": {},
+            "rss:title": {
+                "@": {},
+                "#": "奇客Solidot–传递最新科技情报"
+            },
+            "rss:link": {
+                "@": {},
+                "#": "https://www.solidot.org/"
+            },
+            "rss:description": {
+                "@": {},
+                "#": "奇客的知识，重要的东西。"
+            },
+            "atom:link": {
+                "@": {
+                    "href": "https://www.solidot.org/index.rss",
+                    "rel": "self",
+                    "type": "application/rss+xml"
+                }
+            },
+            "rss:language": {
+                "@": {},
+                "#": "zh-cn"
+            },
+            "rss:pubdate": {
+                "@": {},
+                "#": "Thu, 23 May 2024 23:02:54 +0800"
+            },
+            "rss:ttl": {
+                "@": {},
+                "#": "20"
+            }
+        }
+    },
+    {
+        "title": "美国公布首例与 AI 生成色情图像相关的案件",
+        "description": "美国司法部上周逮捕了 42 岁的软件工程师 Steven Anderegg，他受到了四项指控，其中之一是向未成年人发送色情图像。这起诉讼是首例与 AI 生成色情图像相关的案件，但制作 AI 色情并非是本案的核心。Anderegg 被指使用了开源文本图像模型 Stable Diffusion 1.5 生成了 CSAM 材料（child sexual abuse material），他在网上与一名 15 岁男孩交流，试图引诱对方与其发生性关系。他向男孩介绍了如何用 AI 模型生成图像，直接通过 Instagram 向其发送了 CSAM 材料，其中包括未成年人展示性器官的 AI 图像。Instagram 向 NCMEC（National Center for Missing and Exploited Children）举报了这些图像，后者随后报告给了警方。如果四项罪名都成立，他将面临 5-70 年徒刑。",
+        "summary": "美国司法部上周逮捕了 42 岁的软件工程师 Steven Anderegg，他受到了四项指控，其中之一是向未成年人发送色情图像。这起诉讼是首例与 AI 生成色情图像相关的案件，但制作 AI 色情并非是本案的核心。Anderegg 被指使用了开源文本图像模型 Stable Diffusion 1.5 生成了 CSAM 材料（child sexual abuse material），他在网上与一名 15 岁男孩交流，试图引诱对方与其发生性关系。他向男孩介绍了如何用 AI 模型生成图像，直接通过 Instagram 向其发送了 CSAM 材料，其中包括未成年人展示性器官的 AI 图像。Instagram 向 NCMEC（National Center for Missing and Exploited Children）举报了这些图像，后者随后报告给了警方。如果四项罪名都成立，他将面临 5-70 年徒刑。",
+        "date": "2024-05-22T14:05:47.000Z",
+        "pubdate": "2024-05-22T14:05:47.000Z",
+        "pubDate": "2024-05-22T14:05:47.000Z",
+        "link": "https://www.solidot.org/story?sid=78242",
+        "guid": "https://www.solidot.org/story?sid=78242",
+        "author": null,
+        "comments": null,
+        "origlink": null,
+        "image": {},
+        "source": {},
+        "categories": [],
+        "enclosures": [],
+        "rss:@": {},
+        "rss:title": {
+            "@": {},
+            "#": "美国公布首例与 AI 生成色情图像相关的案件"
+        },
+        "rss:link": {
+            "@": {},
+            "#": "https://www.solidot.org/story?sid=78242"
+        },
+        "rss:description": {
+            "@": {},
+            "#": "美国司法部上周逮捕了 42 岁的软件工程师 Steven Anderegg，他受到了四项指控，其中之一是向未成年人发送色情图像。这起诉讼是首例与 AI 生成色情图像相关的案件，但制作 AI 色情并非是本案的核心。Anderegg 被指使用了开源文本图像模型 Stable Diffusion 1.5 生成了 CSAM 材料（child sexual abuse material），他在网上与一名 15 岁男孩交流，试图引诱对方与其发生性关系。他向男孩介绍了如何用 AI 模型生成图像，直接通过 Instagram 向其发送了 CSAM 材料，其中包括未成年人展示性器官的 AI 图像。Instagram 向 NCMEC（National Center for Missing and Exploited Children）举报了这些图像，后者随后报告给了警方。如果四项罪名都成立，他将面临 5-70 年徒刑。",
+            "p": {
+                "@": {}
+            }
+        },
+        "rss:pubdate": {
+            "@": {},
+            "#": "Wed, 22 May 2024 22:05:47 +0800"
+        },
+        "meta": {
+            "#ns": [],
+            "@": [],
+            "#xml": {},
+            "#type": "rss",
+            "#version": "2.0",
+            "title": "奇客Solidot–传递最新科技情报",
+            "description": "奇客的知识，重要的东西。",
+            "date": "2024-05-23T15:02:54.000Z",
+            "pubdate": "2024-05-23T15:02:54.000Z",
+            "pubDate": "2024-05-23T15:02:54.000Z",
+            "link": "https://www.solidot.org/",
+            "xmlurl": "https://www.solidot.org/index.rss",
+            "xmlUrl": "https://www.solidot.org/index.rss",
+            "author": null,
+            "language": "zh-cn",
+            "favicon": null,
+            "copyright": null,
+            "generator": null,
+            "cloud": {},
+            "image": {},
+            "categories": [],
+            "rss:@": {},
+            "rss:title": {
+                "@": {},
+                "#": "奇客Solidot–传递最新科技情报"
+            },
+            "rss:link": {
+                "@": {},
+                "#": "https://www.solidot.org/"
+            },
+            "rss:description": {
+                "@": {},
+                "#": "奇客的知识，重要的东西。"
+            },
+            "atom:link": {
+                "@": {
+                    "href": "https://www.solidot.org/index.rss",
+                    "rel": "self",
+                    "type": "application/rss+xml"
+                }
+            },
+            "rss:language": {
+                "@": {},
+                "#": "zh-cn"
+            },
+            "rss:pubdate": {
+                "@": {},
+                "#": "Thu, 23 May 2024 23:02:54 +0800"
+            },
+            "rss:ttl": {
+                "@": {},
+                "#": "20"
+            }
+        }
+    },
+    {
+        "title": "微软为文件资源管理器加入版本控制和 7z 压缩",
+        "description": "在 Build 开发者大会上，微软称它正为文件资源管理器加入版本控制，集成 Git 等流行版本控制系统，让用户或开发者直接通过文件资源管理器应用浏览代码库的新变化和评论。软件巨人同时表示，文件资源管理器还将原生支持 7-zip 和 TAR 压缩文件，而目前它只支持 ZIP 压缩。",
+        "summary": "在 Build 开发者大会上，微软称它正为文件资源管理器加入版本控制，集成 Git 等流行版本控制系统，让用户或开发者直接通过文件资源管理器应用浏览代码库的新变化和评论。软件巨人同时表示，文件资源管理器还将原生支持 7-zip 和 TAR 压缩文件，而目前它只支持 ZIP 压缩。",
+        "date": "2024-05-22T13:16:51.000Z",
+        "pubdate": "2024-05-22T13:16:51.000Z",
+        "pubDate": "2024-05-22T13:16:51.000Z",
+        "link": "https://www.solidot.org/story?sid=78241",
+        "guid": "https://www.solidot.org/story?sid=78241",
+        "author": null,
+        "comments": null,
+        "origlink": null,
+        "image": {},
+        "source": {},
+        "categories": [],
+        "enclosures": [],
+        "rss:@": {},
+        "rss:title": {
+            "@": {},
+            "#": "微软为文件资源管理器加入版本控制和 7z 压缩"
+        },
+        "rss:link": {
+            "@": {},
+            "#": "https://www.solidot.org/story?sid=78241"
+        },
+        "rss:description": {
+            "@": {},
+            "#": "在 Build 开发者大会上，微软称它正为文件资源管理器加入版本控制，集成 Git 等流行版本控制系统，让用户或开发者直接通过文件资源管理器应用浏览代码库的新变化和评论。软件巨人同时表示，文件资源管理器还将原生支持 7-zip 和 TAR 压缩文件，而目前它只支持 ZIP 压缩。",
+            "p": {
+                "@": {}
+            }
+        },
+        "rss:pubdate": {
+            "@": {},
+            "#": "Wed, 22 May 2024 21:16:51 +0800"
+        },
+        "meta": {
+            "#ns": [],
+            "@": [],
+            "#xml": {},
+            "#type": "rss",
+            "#version": "2.0",
+            "title": "奇客Solidot–传递最新科技情报",
+            "description": "奇客的知识，重要的东西。",
+            "date": "2024-05-23T15:02:54.000Z",
+            "pubdate": "2024-05-23T15:02:54.000Z",
+            "pubDate": "2024-05-23T15:02:54.000Z",
+            "link": "https://www.solidot.org/",
+            "xmlurl": "https://www.solidot.org/index.rss",
+            "xmlUrl": "https://www.solidot.org/index.rss",
+            "author": null,
+            "language": "zh-cn",
+            "favicon": null,
+            "copyright": null,
+            "generator": null,
+            "cloud": {},
+            "image": {},
+            "categories": [],
+            "rss:@": {},
+            "rss:title": {
+                "@": {},
+                "#": "奇客Solidot–传递最新科技情报"
+            },
+            "rss:link": {
+                "@": {},
+                "#": "https://www.solidot.org/"
+            },
+            "rss:description": {
+                "@": {},
+                "#": "奇客的知识，重要的东西。"
+            },
+            "atom:link": {
+                "@": {
+                    "href": "https://www.solidot.org/index.rss",
+                    "rel": "self",
+                    "type": "application/rss+xml"
+                }
+            },
+            "rss:language": {
+                "@": {},
+                "#": "zh-cn"
+            },
+            "rss:pubdate": {
+                "@": {},
+                "#": "Thu, 23 May 2024 23:02:54 +0800"
+            },
+            "rss:ttl": {
+                "@": {},
+                "#": "20"
+            }
+        }
+    },
+    {
+        "title": "电动汽车比油车更容易撞行人",
+        "description": "英国统计数据显示，电动汽车和混动汽车更容易撞到行人。对英国交通事故的分析发现，电动和混动汽车撞到行人的可能性是燃油汽车的两倍，在城市地区会进一步上升到三倍。造成这一现象的原因尚不清楚，研究人员怀疑是多种因素的结果，其中包括司机更年轻，缺乏经验，电动和混动汽车更安静，更难被行人听到，尤其是在城市地区。伦敦大学学院交通安全教授 Nicola Christie 表示，人们依靠声音去判断汽车的存在、速度和位置。缺少这些线索时，对于忙碌的城市居民而言，这可能会成为问题；对于视力不佳的人或难以判断车辆速度和距离的儿童而言，问题会更严重。电动汽车其它问题还有加速更快，比燃油汽车更重。",
+        "summary": "英国统计数据显示，电动汽车和混动汽车更容易撞到行人。对英国交通事故的分析发现，电动和混动汽车撞到行人的可能性是燃油汽车的两倍，在城市地区会进一步上升到三倍。造成这一现象的原因尚不清楚，研究人员怀疑是多种因素的结果，其中包括司机更年轻，缺乏经验，电动和混动汽车更安静，更难被行人听到，尤其是在城市地区。伦敦大学学院交通安全教授 Nicola Christie 表示，人们依靠声音去判断汽车的存在、速度和位置。缺少这些线索时，对于忙碌的城市居民而言，这可能会成为问题；对于视力不佳的人或难以判断车辆速度和距离的儿童而言，问题会更严重。电动汽车其它问题还有加速更快，比燃油汽车更重。",
+        "date": "2024-05-22T08:54:23.000Z",
+        "pubdate": "2024-05-22T08:54:23.000Z",
+        "pubDate": "2024-05-22T08:54:23.000Z",
+        "link": "https://www.solidot.org/story?sid=78240",
+        "guid": "https://www.solidot.org/story?sid=78240",
+        "author": null,
+        "comments": null,
+        "origlink": null,
+        "image": {},
+        "source": {},
+        "categories": [],
+        "enclosures": [],
+        "rss:@": {},
+        "rss:title": {
+            "@": {},
+            "#": "电动汽车比油车更容易撞行人"
+        },
+        "rss:link": {
+            "@": {},
+            "#": "https://www.solidot.org/story?sid=78240"
+        },
+        "rss:description": {
+            "@": {},
+            "#": "英国统计数据显示，电动汽车和混动汽车更容易撞到行人。对英国交通事故的分析发现，电动和混动汽车撞到行人的可能性是燃油汽车的两倍，在城市地区会进一步上升到三倍。造成这一现象的原因尚不清楚，研究人员怀疑是多种因素的结果，其中包括司机更年轻，缺乏经验，电动和混动汽车更安静，更难被行人听到，尤其是在城市地区。伦敦大学学院交通安全教授 Nicola Christie 表示，人们依靠声音去判断汽车的存在、速度和位置。缺少这些线索时，对于忙碌的城市居民而言，这可能会成为问题；对于视力不佳的人或难以判断车辆速度和距离的儿童而言，问题会更严重。电动汽车其它问题还有加速更快，比燃油汽车更重。",
+            "p": {
+                "@": {}
+            }
+        },
+        "rss:pubdate": {
+            "@": {},
+            "#": "Wed, 22 May 2024 16:54:23 +0800"
+        },
+        "meta": {
+            "#ns": [],
+            "@": [],
+            "#xml": {},
+            "#type": "rss",
+            "#version": "2.0",
+            "title": "奇客Solidot–传递最新科技情报",
+            "description": "奇客的知识，重要的东西。",
+            "date": "2024-05-23T15:02:54.000Z",
+            "pubdate": "2024-05-23T15:02:54.000Z",
+            "pubDate": "2024-05-23T15:02:54.000Z",
+            "link": "https://www.solidot.org/",
+            "xmlurl": "https://www.solidot.org/index.rss",
+            "xmlUrl": "https://www.solidot.org/index.rss",
+            "author": null,
+            "language": "zh-cn",
+            "favicon": null,
+            "copyright": null,
+            "generator": null,
+            "cloud": {},
+            "image": {},
+            "categories": [],
+            "rss:@": {},
+            "rss:title": {
+                "@": {},
+                "#": "奇客Solidot–传递最新科技情报"
+            },
+            "rss:link": {
+                "@": {},
+                "#": "https://www.solidot.org/"
+            },
+            "rss:description": {
+                "@": {},
+                "#": "奇客的知识，重要的东西。"
+            },
+            "atom:link": {
+                "@": {
+                    "href": "https://www.solidot.org/index.rss",
+                    "rel": "self",
+                    "type": "application/rss+xml"
+                }
+            },
+            "rss:language": {
+                "@": {},
+                "#": "zh-cn"
+            },
+            "rss:pubdate": {
+                "@": {},
+                "#": "Thu, 23 May 2024 23:02:54 +0800"
+            },
+            "rss:ttl": {
+                "@": {},
+                "#": "20"
+            }
+        }
+    },
+    {
+        "title": "ISEF 2024 头奖得主被指造假",
+        "description": "The Regeneron International Science and Engineering Fair(ISEF)是世界规模最大最负盛名的科学博览会，ISEF 2024 于上周在洛杉矶会展中心举行。Krish Pai 赢得了环境工程类别的头奖，赢得了 Regeneron Young Scientist Award 和 5.5 万美元奖金。但 17 岁的 Pai 被发现存在大量造假行为。他使用的图像是从网上盗来的，但做成了镜像，可能是为了避免被人识别。他的其它行为还包括盗窃数据、夸大新颖性、剽窃、引用欺骗等等。",
+        "summary": "The Regeneron International Science and Engineering Fair(ISEF)是世界规模最大最负盛名的科学博览会，ISEF 2024 于上周在洛杉矶会展中心举行。Krish Pai 赢得了环境工程类别的头奖，赢得了 Regeneron Young Scientist Award 和 5.5 万美元奖金。但 17 岁的 Pai 被发现存在大量造假行为。他使用的图像是从网上盗来的，但做成了镜像，可能是为了避免被人识别。他的其它行为还包括盗窃数据、夸大新颖性、剽窃、引用欺骗等等。",
+        "date": "2024-05-22T08:08:48.000Z",
+        "pubdate": "2024-05-22T08:08:48.000Z",
+        "pubDate": "2024-05-22T08:08:48.000Z",
+        "link": "https://www.solidot.org/story?sid=78239",
+        "guid": "https://www.solidot.org/story?sid=78239",
+        "author": null,
+        "comments": null,
+        "origlink": null,
+        "image": {},
+        "source": {},
+        "categories": [],
+        "enclosures": [],
+        "rss:@": {},
+        "rss:title": {
+            "@": {},
+            "#": "ISEF 2024 头奖得主被指造假"
+        },
+        "rss:link": {
+            "@": {},
+            "#": "https://www.solidot.org/story?sid=78239"
+        },
+        "rss:description": {
+            "@": {},
+            "#": "The Regeneron International Science and Engineering Fair(ISEF)是世界规模最大最负盛名的科学博览会，ISEF 2024 于上周在洛杉矶会展中心举行。Krish Pai 赢得了环境工程类别的头奖，赢得了 Regeneron Young Scientist Award 和 5.5 万美元奖金。但 17 岁的 Pai 被发现存在大量造假行为。他使用的图像是从网上盗来的，但做成了镜像，可能是为了避免被人识别。他的其它行为还包括盗窃数据、夸大新颖性、剽窃、引用欺骗等等。",
+            "p": {
+                "@": {}
+            }
+        },
+        "rss:pubdate": {
+            "@": {},
+            "#": "Wed, 22 May 2024 16:08:48 +0800"
+        },
+        "meta": {
+            "#ns": [],
+            "@": [],
+            "#xml": {},
+            "#type": "rss",
+            "#version": "2.0",
+            "title": "奇客Solidot–传递最新科技情报",
+            "description": "奇客的知识，重要的东西。",
+            "date": "2024-05-23T15:02:54.000Z",
+            "pubdate": "2024-05-23T15:02:54.000Z",
+            "pubDate": "2024-05-23T15:02:54.000Z",
+            "link": "https://www.solidot.org/",
+            "xmlurl": "https://www.solidot.org/index.rss",
+            "xmlUrl": "https://www.solidot.org/index.rss",
+            "author": null,
+            "language": "zh-cn",
+            "favicon": null,
+            "copyright": null,
+            "generator": null,
+            "cloud": {},
+            "image": {},
+            "categories": [],
+            "rss:@": {},
+            "rss:title": {
+                "@": {},
+                "#": "奇客Solidot–传递最新科技情报"
+            },
+            "rss:link": {
+                "@": {},
+                "#": "https://www.solidot.org/"
+            },
+            "rss:description": {
+                "@": {},
+                "#": "奇客的知识，重要的东西。"
+            },
+            "atom:link": {
+                "@": {
+                    "href": "https://www.solidot.org/index.rss",
+                    "rel": "self",
+                    "type": "application/rss+xml"
+                }
+            },
+            "rss:language": {
+                "@": {},
+                "#": "zh-cn"
+            },
+            "rss:pubdate": {
+                "@": {},
+                "#": "Thu, 23 May 2024 23:02:54 +0800"
+            },
+            "rss:ttl": {
+                "@": {},
+                "#": "20"
+            }
+        }
+    },
+    {
+        "title": "中国电动汽车相关企业大幅增加了员工数量",
+        "description": "中国上市公司员工人数的统计显示，电动汽车相关企业大幅增加了员工数量。根据截至 4 月 30 日的约 5400 家内地上市企业的 2023 年度报告，2023 年年底的员工总数达到 3057 万人，比 2019 年年底增加 352 万人。按行业来看，汽车、电子产品、半导体和新能源起拉动作用。其中在电动汽车领域与特斯拉争夺世界第一宝座的比亚迪(BYD)，2023 年年底的员工人数比 2019 年增加 47 万人，达到了 70 万人的规模。比亚迪除了扩充从宿舍到工厂的通勤巴士、改善员工食堂提供的餐饮之外，还与深圳中学合作，成立了附设幼儿园、小学和初中的“深圳亚迪学校”。最大车载电池企业宁德时代新能源科技也将员工人数增加了近 9 万人。",
+        "summary": "中国上市公司员工人数的统计显示，电动汽车相关企业大幅增加了员工数量。根据截至 4 月 30 日的约 5400 家内地上市企业的 2023 年度报告，2023 年年底的员工总数达到 3057 万人，比 2019 年年底增加 352 万人。按行业来看，汽车、电子产品、半导体和新能源起拉动作用。其中在电动汽车领域与特斯拉争夺世界第一宝座的比亚迪(BYD)，2023 年年底的员工人数比 2019 年增加 47 万人，达到了 70 万人的规模。比亚迪除了扩充从宿舍到工厂的通勤巴士、改善员工食堂提供的餐饮之外，还与深圳中学合作，成立了附设幼儿园、小学和初中的“深圳亚迪学校”。最大车载电池企业宁德时代新能源科技也将员工人数增加了近 9 万人。",
+        "date": "2024-05-22T07:29:49.000Z",
+        "pubdate": "2024-05-22T07:29:49.000Z",
+        "pubDate": "2024-05-22T07:29:49.000Z",
+        "link": "https://www.solidot.org/story?sid=78238",
+        "guid": "https://www.solidot.org/story?sid=78238",
+        "author": null,
+        "comments": null,
+        "origlink": null,
+        "image": {},
+        "source": {},
+        "categories": [],
+        "enclosures": [],
+        "rss:@": {},
+        "rss:title": {
+            "@": {},
+            "#": "中国电动汽车相关企业大幅增加了员工数量"
+        },
+        "rss:link": {
+            "@": {},
+            "#": "https://www.solidot.org/story?sid=78238"
+        },
+        "rss:description": {
+            "@": {},
+            "#": "中国上市公司员工人数的统计显示，电动汽车相关企业大幅增加了员工数量。根据截至 4 月 30 日的约 5400 家内地上市企业的 2023 年度报告，2023 年年底的员工总数达到 3057 万人，比 2019 年年底增加 352 万人。按行业来看，汽车、电子产品、半导体和新能源起拉动作用。其中在电动汽车领域与特斯拉争夺世界第一宝座的比亚迪(BYD)，2023 年年底的员工人数比 2019 年增加 47 万人，达到了 70 万人的规模。比亚迪除了扩充从宿舍到工厂的通勤巴士、改善员工食堂提供的餐饮之外，还与深圳中学合作，成立了附设幼儿园、小学和初中的“深圳亚迪学校”。最大车载电池企业宁德时代新能源科技也将员工人数增加了近 9 万人。",
+            "p": {
+                "@": {}
+            }
+        },
+        "rss:pubdate": {
+            "@": {},
+            "#": "Wed, 22 May 2024 15:29:49 +0800"
+        },
+        "meta": {
+            "#ns": [],
+            "@": [],
+            "#xml": {},
+            "#type": "rss",
+            "#version": "2.0",
+            "title": "奇客Solidot–传递最新科技情报",
+            "description": "奇客的知识，重要的东西。",
+            "date": "2024-05-23T15:02:54.000Z",
+            "pubdate": "2024-05-23T15:02:54.000Z",
+            "pubDate": "2024-05-23T15:02:54.000Z",
+            "link": "https://www.solidot.org/",
+            "xmlurl": "https://www.solidot.org/index.rss",
+            "xmlUrl": "https://www.solidot.org/index.rss",
+            "author": null,
+            "language": "zh-cn",
+            "favicon": null,
+            "copyright": null,
+            "generator": null,
+            "cloud": {},
+            "image": {},
+            "categories": [],
+            "rss:@": {},
+            "rss:title": {
+                "@": {},
+                "#": "奇客Solidot–传递最新科技情报"
+            },
+            "rss:link": {
+                "@": {},
+                "#": "https://www.solidot.org/"
+            },
+            "rss:description": {
+                "@": {},
+                "#": "奇客的知识，重要的东西。"
+            },
+            "atom:link": {
+                "@": {
+                    "href": "https://www.solidot.org/index.rss",
+                    "rel": "self",
+                    "type": "application/rss+xml"
+                }
+            },
+            "rss:language": {
+                "@": {},
+                "#": "zh-cn"
+            },
+            "rss:pubdate": {
+                "@": {},
+                "#": "Thu, 23 May 2024 23:02:54 +0800"
+            },
+            "rss:ttl": {
+                "@": {},
+                "#": "20"
+            }
+        }
+    },
+    {
+        "title": "尼安德特人和现代人类在 4.7 万年前跨种交配繁育后代",
+        "description": "现代人类携带了尼安德特人的基因，这是现代人类和尼安德特人有过跨种族交配的证据。但这种跨种交配发生在什么时候什么地点，科学家一直对此有争议。根据发表在 bioRxiv 上的一篇预印本，对古代和现代基因组的分析显示，现代人类的尼安德特人 DNA 来自于约 4.7 万年前。尼安德特人和现代人类约在 50 万年前分开，尼安德特人主要生活在欧亚大陆，而现代人类则生活在非洲。现代人类祖先大约 7 万年前离开了非洲进入欧亚大陆，可能在今天的中东或欧洲遭遇了尼安德特人。加州伯克利的科学家分析了已测序的 59 名古代智人基因组，他们生活在距今 4.5 万到 2200 年前。研究人员随后在古代智人基因组和全球 275 个现代人基因组中识别出尼安德特人 DNA 区域，跟踪尼安德特人基因随时间在古代和现代人群中的演变。他们估计尼安德特人基因是在大约 4.7 万年前进入到现代人类祖先基因组中的。",
+        "summary": "现代人类携带了尼安德特人的基因，这是现代人类和尼安德特人有过跨种族交配的证据。但这种跨种交配发生在什么时候什么地点，科学家一直对此有争议。根据发表在 bioRxiv 上的一篇预印本，对古代和现代基因组的分析显示，现代人类的尼安德特人 DNA 来自于约 4.7 万年前。尼安德特人和现代人类约在 50 万年前分开，尼安德特人主要生活在欧亚大陆，而现代人类则生活在非洲。现代人类祖先大约 7 万年前离开了非洲进入欧亚大陆，可能在今天的中东或欧洲遭遇了尼安德特人。加州伯克利的科学家分析了已测序的 59 名古代智人基因组，他们生活在距今 4.5 万到 2200 年前。研究人员随后在古代智人基因组和全球 275 个现代人基因组中识别出尼安德特人 DNA 区域，跟踪尼安德特人基因随时间在古代和现代人群中的演变。他们估计尼安德特人基因是在大约 4.7 万年前进入到现代人类祖先基因组中的。",
+        "date": "2024-05-22T06:40:18.000Z",
+        "pubdate": "2024-05-22T06:40:18.000Z",
+        "pubDate": "2024-05-22T06:40:18.000Z",
+        "link": "https://www.solidot.org/story?sid=78237",
+        "guid": "https://www.solidot.org/story?sid=78237",
+        "author": null,
+        "comments": null,
+        "origlink": null,
+        "image": {},
+        "source": {},
+        "categories": [],
+        "enclosures": [],
+        "rss:@": {},
+        "rss:title": {
+            "@": {},
+            "#": "尼安德特人和现代人类在 4.7 万年前跨种交配繁育后代"
+        },
+        "rss:link": {
+            "@": {},
+            "#": "https://www.solidot.org/story?sid=78237"
+        },
+        "rss:description": {
+            "@": {},
+            "#": "现代人类携带了尼安德特人的基因，这是现代人类和尼安德特人有过跨种族交配的证据。但这种跨种交配发生在什么时候什么地点，科学家一直对此有争议。根据发表在 bioRxiv 上的一篇预印本，对古代和现代基因组的分析显示，现代人类的尼安德特人 DNA 来自于约 4.7 万年前。尼安德特人和现代人类约在 50 万年前分开，尼安德特人主要生活在欧亚大陆，而现代人类则生活在非洲。现代人类祖先大约 7 万年前离开了非洲进入欧亚大陆，可能在今天的中东或欧洲遭遇了尼安德特人。加州伯克利的科学家分析了已测序的 59 名古代智人基因组，他们生活在距今 4.5 万到 2200 年前。研究人员随后在古代智人基因组和全球 275 个现代人基因组中识别出尼安德特人 DNA 区域，跟踪尼安德特人基因随时间在古代和现代人群中的演变。他们估计尼安德特人基因是在大约 4.7 万年前进入到现代人类祖先基因组中的。",
+            "p": {
+                "@": {}
+            }
+        },
+        "rss:pubdate": {
+            "@": {},
+            "#": "Wed, 22 May 2024 14:40:18 +0800"
+        },
+        "meta": {
+            "#ns": [],
+            "@": [],
+            "#xml": {},
+            "#type": "rss",
+            "#version": "2.0",
+            "title": "奇客Solidot–传递最新科技情报",
+            "description": "奇客的知识，重要的东西。",
+            "date": "2024-05-23T15:02:54.000Z",
+            "pubdate": "2024-05-23T15:02:54.000Z",
+            "pubDate": "2024-05-23T15:02:54.000Z",
+            "link": "https://www.solidot.org/",
+            "xmlurl": "https://www.solidot.org/index.rss",
+            "xmlUrl": "https://www.solidot.org/index.rss",
+            "author": null,
+            "language": "zh-cn",
+            "favicon": null,
+            "copyright": null,
+            "generator": null,
+            "cloud": {},
+            "image": {},
+            "categories": [],
+            "rss:@": {},
+            "rss:title": {
+                "@": {},
+                "#": "奇客Solidot–传递最新科技情报"
+            },
+            "rss:link": {
+                "@": {},
+                "#": "https://www.solidot.org/"
+            },
+            "rss:description": {
+                "@": {},
+                "#": "奇客的知识，重要的东西。"
+            },
+            "atom:link": {
+                "@": {
+                    "href": "https://www.solidot.org/index.rss",
+                    "rel": "self",
+                    "type": "application/rss+xml"
+                }
+            },
+            "rss:language": {
+                "@": {},
+                "#": "zh-cn"
+            },
+            "rss:pubdate": {
+                "@": {},
+                "#": "Thu, 23 May 2024 23:02:54 +0800"
+            },
+            "rss:ttl": {
+                "@": {},
+                "#": "20"
+            }
+        }
+    },
+    {
+        "title": "论文工厂写手越来越多的使用 AI",
+        "description": "记者调查发现，在多个电商、社交平台上，都有论文代写的身影。中介发帖宣传、拉客谈价，写手接单，俨然形成一条完整的灰色产业链，而中介宣称的“老师代写”，毕业生眼里的“专业写手”，不过是深谙降重之道的论文剽窃者，或使用 AI 写作的外行人。一位有经验的写手告诉记者，可以用 AI 写。论文中的数据统计，可以先让AI合理地编一些数据，再让 AI 根据编好的数据，一章节一章节地分析，“一下午就搞定了”，“写一篇论文才挣三五百元，你还真去帮他查数据、找资料，认认真真地写啊。”一位初中学历的写手介绍，他进入代写行业已经 7 年了。刚开始就是找已发表的论文拼凑，然后再使用一些软件或手动改语序、词语进行降重，AI 出现后，主要靠 AI 辅助完成论文。",
+        "summary": "记者调查发现，在多个电商、社交平台上，都有论文代写的身影。中介发帖宣传、拉客谈价，写手接单，俨然形成一条完整的灰色产业链，而中介宣称的“老师代写”，毕业生眼里的“专业写手”，不过是深谙降重之道的论文剽窃者，或使用 AI 写作的外行人。一位有经验的写手告诉记者，可以用 AI 写。论文中的数据统计，可以先让AI合理地编一些数据，再让 AI 根据编好的数据，一章节一章节地分析，“一下午就搞定了”，“写一篇论文才挣三五百元，你还真去帮他查数据、找资料，认认真真地写啊。”一位初中学历的写手介绍，他进入代写行业已经 7 年了。刚开始就是找已发表的论文拼凑，然后再使用一些软件或手动改语序、词语进行降重，AI 出现后，主要靠 AI 辅助完成论文。",
+        "date": "2024-05-22T05:47:08.000Z",
+        "pubdate": "2024-05-22T05:47:08.000Z",
+        "pubDate": "2024-05-22T05:47:08.000Z",
+        "link": "https://www.solidot.org/story?sid=78236",
+        "guid": "https://www.solidot.org/story?sid=78236",
+        "author": null,
+        "comments": null,
+        "origlink": null,
+        "image": {},
+        "source": {},
+        "categories": [],
+        "enclosures": [],
+        "rss:@": {},
+        "rss:title": {
+            "@": {},
+            "#": "论文工厂写手越来越多的使用 AI"
+        },
+        "rss:link": {
+            "@": {},
+            "#": "https://www.solidot.org/story?sid=78236"
+        },
+        "rss:description": {
+            "@": {},
+            "#": "记者调查发现，在多个电商、社交平台上，都有论文代写的身影。中介发帖宣传、拉客谈价，写手接单，俨然形成一条完整的灰色产业链，而中介宣称的“老师代写”，毕业生眼里的“专业写手”，不过是深谙降重之道的论文剽窃者，或使用 AI 写作的外行人。一位有经验的写手告诉记者，可以用 AI 写。论文中的数据统计，可以先让AI合理地编一些数据，再让 AI 根据编好的数据，一章节一章节地分析，“一下午就搞定了”，“写一篇论文才挣三五百元，你还真去帮他查数据、找资料，认认真真地写啊。”一位初中学历的写手介绍，他进入代写行业已经 7 年了。刚开始就是找已发表的论文拼凑，然后再使用一些软件或手动改语序、词语进行降重，AI 出现后，主要靠 AI 辅助完成论文。",
+            "p": {
+                "@": {}
+            }
+        },
+        "rss:pubdate": {
+            "@": {},
+            "#": "Wed, 22 May 2024 13:47:08 +0800"
+        },
+        "meta": {
+            "#ns": [],
+            "@": [],
+            "#xml": {},
+            "#type": "rss",
+            "#version": "2.0",
+            "title": "奇客Solidot–传递最新科技情报",
+            "description": "奇客的知识，重要的东西。",
+            "date": "2024-05-23T15:02:54.000Z",
+            "pubdate": "2024-05-23T15:02:54.000Z",
+            "pubDate": "2024-05-23T15:02:54.000Z",
+            "link": "https://www.solidot.org/",
+            "xmlurl": "https://www.solidot.org/index.rss",
+            "xmlUrl": "https://www.solidot.org/index.rss",
+            "author": null,
+            "language": "zh-cn",
+            "favicon": null,
+            "copyright": null,
+            "generator": null,
+            "cloud": {},
+            "image": {},
+            "categories": [],
+            "rss:@": {},
+            "rss:title": {
+                "@": {},
+                "#": "奇客Solidot–传递最新科技情报"
+            },
+            "rss:link": {
+                "@": {},
+                "#": "https://www.solidot.org/"
+            },
+            "rss:description": {
+                "@": {},
+                "#": "奇客的知识，重要的东西。"
+            },
+            "atom:link": {
+                "@": {
+                    "href": "https://www.solidot.org/index.rss",
+                    "rel": "self",
+                    "type": "application/rss+xml"
+                }
+            },
+            "rss:language": {
+                "@": {},
+                "#": "zh-cn"
+            },
+            "rss:pubdate": {
+                "@": {},
+                "#": "Thu, 23 May 2024 23:02:54 +0800"
+            },
+            "rss:ttl": {
+                "@": {},
+                "#": "20"
+            }
+        }
+    },
+    {
+        "title": "Firefox 修复了一个有 25 年历史的 bug",
+        "description": "25 年前，一位用户报告了一个 Netscape Navigator 的 bug，问题是在“始终显示滚动条”下，textarea 的行高显示不正确，指定为 ROWS=5 COLS=30 的 TEXTAREA 字段显示的行高会增加大约 1。这个 bug 的历史比 Firefox 还要古老，Netscape Navigator 是 Firefox 的前身，过去 25 年相同的 bug 用户重复报告了数百次。几天前它终于被修复了。",
+        "summary": "25 年前，一位用户报告了一个 Netscape Navigator 的 bug，问题是在“始终显示滚动条”下，textarea 的行高显示不正确，指定为 ROWS=5 COLS=30 的 TEXTAREA 字段显示的行高会增加大约 1。这个 bug 的历史比 Firefox 还要古老，Netscape Navigator 是 Firefox 的前身，过去 25 年相同的 bug 用户重复报告了数百次。几天前它终于被修复了。",
+        "date": "2024-05-22T05:20:46.000Z",
+        "pubdate": "2024-05-22T05:20:46.000Z",
+        "pubDate": "2024-05-22T05:20:46.000Z",
+        "link": "https://www.solidot.org/story?sid=78235",
+        "guid": "https://www.solidot.org/story?sid=78235",
+        "author": null,
+        "comments": null,
+        "origlink": null,
+        "image": {},
+        "source": {},
+        "categories": [],
+        "enclosures": [],
+        "rss:@": {},
+        "rss:title": {
+            "@": {},
+            "#": "Firefox 修复了一个有 25 年历史的 bug"
+        },
+        "rss:link": {
+            "@": {},
+            "#": "https://www.solidot.org/story?sid=78235"
+        },
+        "rss:description": {
+            "@": {},
+            "#": "25 年前，一位用户报告了一个 Netscape Navigator 的 bug，问题是在“始终显示滚动条”下，textarea 的行高显示不正确，指定为 ROWS=5 COLS=30 的 TEXTAREA 字段显示的行高会增加大约 1。这个 bug 的历史比 Firefox 还要古老，Netscape Navigator 是 Firefox 的前身，过去 25 年相同的 bug 用户重复报告了数百次。几天前它终于被修复了。",
+            "p": {
+                "@": {}
+            }
+        },
+        "rss:pubdate": {
+            "@": {},
+            "#": "Wed, 22 May 2024 13:20:46 +0800"
+        },
+        "meta": {
+            "#ns": [],
+            "@": [],
+            "#xml": {},
+            "#type": "rss",
+            "#version": "2.0",
+            "title": "奇客Solidot–传递最新科技情报",
+            "description": "奇客的知识，重要的东西。",
+            "date": "2024-05-23T15:02:54.000Z",
+            "pubdate": "2024-05-23T15:02:54.000Z",
+            "pubDate": "2024-05-23T15:02:54.000Z",
+            "link": "https://www.solidot.org/",
+            "xmlurl": "https://www.solidot.org/index.rss",
+            "xmlUrl": "https://www.solidot.org/index.rss",
+            "author": null,
+            "language": "zh-cn",
+            "favicon": null,
+            "copyright": null,
+            "generator": null,
+            "cloud": {},
+            "image": {},
+            "categories": [],
+            "rss:@": {},
+            "rss:title": {
+                "@": {},
+                "#": "奇客Solidot–传递最新科技情报"
+            },
+            "rss:link": {
+                "@": {},
+                "#": "https://www.solidot.org/"
+            },
+            "rss:description": {
+                "@": {},
+                "#": "奇客的知识，重要的东西。"
+            },
+            "atom:link": {
+                "@": {
+                    "href": "https://www.solidot.org/index.rss",
+                    "rel": "self",
+                    "type": "application/rss+xml"
+                }
+            },
+            "rss:language": {
+                "@": {},
+                "#": "zh-cn"
+            },
+            "rss:pubdate": {
+                "@": {},
+                "#": "Thu, 23 May 2024 23:02:54 +0800"
+            },
+            "rss:ttl": {
+                "@": {},
+                "#": "20"
+            }
+        }
+    },
+    {
+        "title": "计算机架构师 Gordon Bell 去世，享年 89 岁",
+        "description": "计算机架构师 Gordon Bell 于 5 月 17 日在家中去世，享年 89 岁。他出生于 1934 年，在 MIT 获得电机工程学士和硕士学位，是 DEC 公司雇佣的第二名计算机工程师，开发了 PDP-1 系统的多个组件，发明了第一个通用异步收发报机（UART），是 PDP-4 和 PDP-6 的架构师，是 DEC 最成功的计算机 VAX 的负责人。他于 1983 年因心脏病从 DEC 退休，之后开始积极参与公共政策，帮助成立了 NSF 的计算机和信息科学与工程局，设立了 ACM Gordon Bell 奖，1995 年加入了微软研究院，研究“远程呈现”相关技术。",
+        "summary": "计算机架构师 Gordon Bell 于 5 月 17 日在家中去世，享年 89 岁。他出生于 1934 年，在 MIT 获得电机工程学士和硕士学位，是 DEC 公司雇佣的第二名计算机工程师，开发了 PDP-1 系统的多个组件，发明了第一个通用异步收发报机（UART），是 PDP-4 和 PDP-6 的架构师，是 DEC 最成功的计算机 VAX 的负责人。他于 1983 年因心脏病从 DEC 退休，之后开始积极参与公共政策，帮助成立了 NSF 的计算机和信息科学与工程局，设立了 ACM Gordon Bell 奖，1995 年加入了微软研究院，研究“远程呈现”相关技术。",
+        "date": "2024-05-22T04:34:33.000Z",
+        "pubdate": "2024-05-22T04:34:33.000Z",
+        "pubDate": "2024-05-22T04:34:33.000Z",
+        "link": "https://www.solidot.org/story?sid=78234",
+        "guid": "https://www.solidot.org/story?sid=78234",
+        "author": null,
+        "comments": null,
+        "origlink": null,
+        "image": {},
+        "source": {},
+        "categories": [],
+        "enclosures": [],
+        "rss:@": {},
+        "rss:title": {
+            "@": {},
+            "#": "计算机架构师 Gordon Bell 去世，享年 89 岁"
+        },
+        "rss:link": {
+            "@": {},
+            "#": "https://www.solidot.org/story?sid=78234"
+        },
+        "rss:description": {
+            "@": {},
+            "#": "计算机架构师 Gordon Bell 于 5 月 17 日在家中去世，享年 89 岁。他出生于 1934 年，在 MIT 获得电机工程学士和硕士学位，是 DEC 公司雇佣的第二名计算机工程师，开发了 PDP-1 系统的多个组件，发明了第一个通用异步收发报机（UART），是 PDP-4 和 PDP-6 的架构师，是 DEC 最成功的计算机 VAX 的负责人。他于 1983 年因心脏病从 DEC 退休，之后开始积极参与公共政策，帮助成立了 NSF 的计算机和信息科学与工程局，设立了 ACM Gordon Bell 奖，1995 年加入了微软研究院，研究“远程呈现”相关技术。",
+            "p": {
+                "@": {}
+            }
+        },
+        "rss:pubdate": {
+            "@": {},
+            "#": "Wed, 22 May 2024 12:34:33 +0800"
+        },
+        "meta": {
+            "#ns": [],
+            "@": [],
+            "#xml": {},
+            "#type": "rss",
+            "#version": "2.0",
+            "title": "奇客Solidot–传递最新科技情报",
+            "description": "奇客的知识，重要的东西。",
+            "date": "2024-05-23T15:02:54.000Z",
+            "pubdate": "2024-05-23T15:02:54.000Z",
+            "pubDate": "2024-05-23T15:02:54.000Z",
+            "link": "https://www.solidot.org/",
+            "xmlurl": "https://www.solidot.org/index.rss",
+            "xmlUrl": "https://www.solidot.org/index.rss",
+            "author": null,
+            "language": "zh-cn",
+            "favicon": null,
+            "copyright": null,
+            "generator": null,
+            "cloud": {},
+            "image": {},
+            "categories": [],
+            "rss:@": {},
+            "rss:title": {
+                "@": {},
+                "#": "奇客Solidot–传递最新科技情报"
+            },
+            "rss:link": {
+                "@": {},
+                "#": "https://www.solidot.org/"
+            },
+            "rss:description": {
+                "@": {},
+                "#": "奇客的知识，重要的东西。"
+            },
+            "atom:link": {
+                "@": {
+                    "href": "https://www.solidot.org/index.rss",
+                    "rel": "self",
+                    "type": "application/rss+xml"
+                }
+            },
+            "rss:language": {
+                "@": {},
+                "#": "zh-cn"
+            },
+            "rss:pubdate": {
+                "@": {},
+                "#": "Thu, 23 May 2024 23:02:54 +0800"
+            },
+            "rss:ttl": {
+                "@": {},
+                "#": "20"
+            }
+        }
+    }
+]

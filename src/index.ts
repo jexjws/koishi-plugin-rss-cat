@@ -1,4 +1,4 @@
-import { Context, Logger, Schema, Session, Time, h, $ } from 'koishi'
+import { Context, Logger, Schema, Session, Time, h, $, Dict } from 'koishi'
 import { concatMap, from, map, of, switchMap, throwError } from 'rxjs';
 import *  as logic from './logic';
 import *  as updater from './updater';
@@ -9,7 +9,7 @@ export const inject = {
   required: ['database']
 }
 
-export const using = ['database'] as const
+//export const using = ['database'] as const
 
 export const logger = new Logger('rss-cat')
 
@@ -18,13 +18,24 @@ export interface Config {
   refresh: number
   userAgent: string
   rsshubBackend: string
+  RSSitem : { [key: string]: boolean }
 }
-export const Config: Schema<Config> = Schema.object({
-  timeout: Schema.number().description('请求数据的最长时间。').default(Time.second * 10),
-  refresh: Schema.number().description('刷新数据的时间间隔。').default(Time.minute * 5),
-  userAgent: Schema.string().description('请求时使用的 User Agent。').default('NodeJS/koishi-plugin-rss-cat'),
-  rsshubBackend: Schema.string().description('自托管 RSSHub 的后端地址。加载订阅源时会把 hostname 为 rsshub.app 的rss源替换成你提供的后端hostname。').default('https://rsshub.app'),
-})
+export const Config= Schema.intersect([
+  Schema.object({
+    timeout: Schema.number().description('请求数据的最长时间（秒）').default(10),
+    refresh: Schema.number().description('刷新订阅源的时间间隔（秒）').default(300),
+    userAgent: Schema.string().description('请求时使用的 User Agent').default('NodeJS/koishi-plugin-rss-cat'),
+    rsshubBackend: Schema.string().description('自托管 RSSHub 的后端地址。\n *从订阅源拉取时会把 URL 前缀为`https://rsshub.app`的rss源替换成此处提供的前缀*').default('https://rsshub.app')
+  }).description('RSS 的拉取'),
+  Schema.object({
+    RSSitem: Schema.dict(Boolean).description('会按照这里给出的 item 中的key，按顺序提取出 [RSS源`<item>`中的元素](https://www.rssboard.org/rss-specification#hrelementsOfLtitemgt) 拼装成一起（每项之间会加换行符）并推送至订阅该源的频道。 关闭key右边的开关会使 rss-cat 忽略这个key。').default({"title":true,"link":true,"description":true})
+  }).description('推送单条更新时的排版'),
+  Schema.object({
+    toImg:Schema.boolean().description("转换成图片发送（正在制作 启用无效）").default(false).experimental(),
+
+  
+  }).description('<description> 的特殊处理')
+])
 
 
 declare module 'koishi' {
@@ -44,7 +55,10 @@ export interface RssSource {
    */
   lastBroadcastedpubDate: Date
 }
-export function apply(ctx: Context, config: Config) {
+export async function apply(ctx: Context, config: Config) {
+
+  //throw new Error(`${config.refresh} ${config.timeout}`) //debug
+
   ctx.model.extend("rsscat.source", {
     id: 'unsigned',
     rssLink: 'string',
@@ -69,7 +83,7 @@ export function apply(ctx: Context, config: Config) {
     //
   })
   //定时拉取新消息，有新消息就推送
-  ctx.setInterval(async () => { 
+  ctx.setInterval(async () => {
     const DBreturn = await ctx.database.get('rsscat.source', {})
     from(DBreturn).pipe(
       updater.UpdateSubOperator(ctx, config)
@@ -79,11 +93,11 @@ export function apply(ctx: Context, config: Config) {
           logger.warn(err);
         }
       })
-  }, config.refresh)
+  }, config.refresh * Time.second)
 
   ctx.command('rsscat', '订阅推送，设计为与rsshub搭配使用')
 
-  ctx.command('rsscat.add <rssLink:string>', '增加一个订阅').example('rss-cat add https://www.solidot.org/index.rss')
+  ctx.command('rsscat.add <rssLink:string>', '增加一个订阅').example('rsscat add https://www.solidot.org/index.rss')
     .channelFields(['rsscatSource', 'id', 'platform'])
     .action(async function ({ session }, rssLink) {
       const { id, platform } = session.channel
@@ -105,7 +119,7 @@ export function apply(ctx: Context, config: Config) {
         });
     })
 
-  ctx.command('rsscat.remove <rssLink_or_rssId:string>', '移除一个订阅').example('rss-cat remove https://www.solidot.org/index.rss').example('rss-cat remove 1')
+  ctx.command('rsscat.remove <rssLink_or_rssId:string>', '移除一个订阅').example('rsscat remove https://www.solidot.org/index.rss').example('rss-cat remove 1')
     .channelFields(['rsscatSource', 'id', 'platform'])
     .action(async function ({ session }, rssLink_or_rssId) {
       const { id, platform } = session.channel
@@ -125,7 +139,7 @@ export function apply(ctx: Context, config: Config) {
         })
     });
 
-  ctx.command('rsscat.list', '显示当前频道所有已订阅源').example('rss-cat list')
+  ctx.command('rsscat.list', '显示当前频道所有已订阅源').example('rsscat list')
     .channelFields(['rsscatSource'])
     .action(async function ({ session }) {
       if (session.channel.rsscatSource.length === 0) {
