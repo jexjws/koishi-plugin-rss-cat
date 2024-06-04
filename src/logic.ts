@@ -2,8 +2,8 @@
 import { Context, Logger, Schema, Session, Time, h, $ } from 'koishi'
 import { concatMap, map, of, switchMap, throwError, pipe } from 'rxjs'
 import { Config, RssSource, logger } from '.'
-import RssFeedEmitter from 'rss-feed-emitter'
 import { getRSSbody ,getRSSItems} from './updater'
+
 
 declare module 'koishi' {
     interface Tables {
@@ -73,7 +73,7 @@ async function validate(url: string, ctx:Context, session: Session, config: Conf
         return validators[url];
     }
 
-    validators[url] = new Promise(async (resolve, reject) => {
+    validators[url] = new Promise<void>(async (resolve, reject) => {
 
         const timeoutPromise = new Promise((_, reject) =>
             setTimeout(() => reject(new Error('connect timeout')), timeout)
@@ -83,6 +83,7 @@ async function validate(url: string, ctx:Context, session: Session, config: Conf
         try {
             const httpRes = await getRSSbody(url, ctx, config)
             await getRSSItems(httpRes.data)
+            resolve()
         } catch (error) {
             reject(error)
         }

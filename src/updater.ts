@@ -31,7 +31,7 @@ const UpdateSubOperator = (ctx: Context, config: Config) => {
 
                 logger.info(`${RssSource.id} 号源有${newItems.length}条更新，开始广播这些更新。`)
                 for (const item of newItems) {
-                    const message = RSScomposer(item, config);
+                    const message = RSScomposer(item, config, ctx);
                     await (ctx as any).broadcast(RssSource.subscriber, message);
                 }
                 const latestDate = new Date(Math.max(...newItems.map((item: { pubDate: string | number | Date; }) => new Date(item.pubDate).getTime())));
@@ -53,7 +53,7 @@ function getRSSbody(rssURL: string, ctx: Context, config: Config) {
 
 
 // feedparser-helper.js (data: string) => Promise<any[]>
-async function getRSSItems (data: string) :Promise<any[]> {
+async function getRSSItems(data: string): Promise<any[]> {
     return new Promise((resolve, reject) => {
         const feedparser = new FeedParser();
         const items = [];
@@ -71,11 +71,21 @@ async function getRSSItems (data: string) :Promise<any[]> {
     });
 };
 
-function RSScomposer(item: { [x: string]: any; }, config: Config) {
+function RSScomposer(item: { [x: string]: any; }, config: Config, ctx: Context) {
     let message: string = ''
-    Object.entries(config.RSSitem).forEach(([key, enabled]) => {
+    Object.entries(config.RSSitem).forEach(async ([key, enabled]) => {
         if (!enabled) return
-        message += `${item[key]}\n`
+        if (key === 'description') {
+            //<description> 的特殊处理
+            if (config.toImg) {
+                message += `${(await ctx.puppeteer.render(item[key]))}\n`
+            } else {
+                message += `${item[key]}\n`
+            }
+        } else {
+            message += `${item[key]}\n`
+        }
+
     })
     return message
 }

@@ -1,11 +1,12 @@
 import { Context, Logger, Schema, Session, Time, h, $, Dict } from 'koishi'
 import { concatMap, from, map, of, switchMap, throwError } from 'rxjs';
+import Puppeteer from 'koishi-plugin-puppeteer'
 import *  as logic from './logic';
 import *  as updater from './updater';
 
 export const name = 'rss-cat'
 export const inject = {
-  optional: [],
+  optional: ['puppeteer'],
   required: ['database']
 }
 
@@ -19,6 +20,7 @@ export interface Config {
   userAgent: string
   rsshubBackend: string
   RSSitem : { [key: string]: boolean }
+  toImg:boolean
 }
 export const Config= Schema.intersect([
   Schema.object({
@@ -31,7 +33,7 @@ export const Config= Schema.intersect([
     RSSitem: Schema.dict(Boolean).description('会按照这里给出的 item 中的key，按顺序提取出 [RSS源`<item>`中的元素](https://www.rssboard.org/rss-specification#hrelementsOfLtitemgt) 拼装成一起（每项之间会加换行符）并推送至订阅该源的频道。 关闭key右边的开关会使 rss-cat 忽略这个key。').default({"title":true,"link":true,"description":true})
   }).description('推送单条更新时的排版'),
   Schema.object({
-    toImg:Schema.boolean().description("转换成图片发送（正在制作 启用无效）").default(false).experimental(),
+    toImg:Schema.boolean().description("使用 puppeteer 插件转换成图片发送。请确保 puppeteer 服务已加载。在 puppeteer 插件设置页面中调节转换成图片的详细设置（如图片宽度）。 ").default(false).experimental(),
 
   
   }).description('<description> 的特殊处理')
@@ -45,6 +47,10 @@ declare module 'koishi' {
   interface Channel {
     rsscatSource: string[]
   }
+  interface Context {
+    puppeteer: Puppeteer
+  }
+
 }
 export interface RssSource {
   id: number
@@ -81,19 +87,25 @@ export async function apply(ctx: Context, config: Config) {
 
   ctx.on('ready', () => {
     //
+    //TODO: 使用rxjs确保只有一个UpdateSubOperator在运行
+    if (config.toImg && !(ctx.puppeteer)){
+      logger.warn("警告：toImg 选项已打开，但未检测到 puppeteer 服务，可能无法正常推送消息。")
+    }
+    //定时拉取新消息，有新消息就推送
+    ctx.setInterval(async () => {
+      const DBreturn = await ctx.database.get('rsscat.source', {})
+      from(DBreturn).pipe(
+        updater.UpdateSubOperator(ctx, config)
+      ).
+        subscribe({
+          error: (err) => {
+            logger.warn(err);
+          }
+        })
+    }, config.refresh * Time.second)
   })
-  //定时拉取新消息，有新消息就推送
-  ctx.setInterval(async () => {
-    const DBreturn = await ctx.database.get('rsscat.source', {})
-    from(DBreturn).pipe(
-      updater.UpdateSubOperator(ctx, config)
-    ).
-      subscribe({
-        error: (err) => {
-          logger.warn(err);
-        }
-      })
-  }, config.refresh * Time.second)
+  
+  
 
   ctx.command('rsscat', '订阅推送，设计为与rsshub搭配使用')
 
@@ -152,6 +164,12 @@ export async function apply(ctx: Context, config: Config) {
       })
       return outputStr
     });
+
+    /*
+    ctx.command('rsscat.testImg', '测试 puppeteer 可用性')
+    .action(async function ({ session }, rssLink) {
+      return await ctx.puppeteer.render('<h1>test</h1>')
+    });*/
 
   //ctx.command('rss-cat.set', '设定 rss-cat 在当前频道的行为')
 }
