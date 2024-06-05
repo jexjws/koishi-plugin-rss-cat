@@ -88,8 +88,8 @@ export async function apply(ctx: Context, config: Config) {
   ctx.on('ready', () => {
     //
     //TODO: 使用rxjs确保只有一个UpdateSubOperator在运行
-    if (config.toImg && !(ctx.puppeteer)){
-      logger.warn("警告：toImg 选项已打开，但未检测到 puppeteer 服务，可能无法正常推送消息。")
+    if (config.toImg && !(ctx.puppeteer.render)){
+      logger.warn("警告：toImg 选项已打开，但未检测到 puppeteer.render 接口，可能无法正常推送消息。")
     }
     //定时拉取新消息，有新消息就推送
     ctx.setInterval(async () => {
@@ -165,11 +165,12 @@ export async function apply(ctx: Context, config: Config) {
       return outputStr
     });
 
-    /*
+    
     ctx.command('rsscat.testImg', '测试 puppeteer 可用性')
-    .action(async function ({ session }, rssLink) {
-      return await ctx.puppeteer.render('<h1>test</h1>')
-    });*/
+    .action(async function ({  }, ) {
+      
+      return h('html', h.parse('<h1>puppeteer ok</h1>'))
+    });
 
   //ctx.command('rss-cat.set', '设定 rss-cat 在当前频道的行为')
 }

@@ -78,7 +78,7 @@ function RSScomposer(item: { [x: string]: any; }, config: Config, ctx: Context) 
         if (key === 'description') {
             //<description> 的特殊处理
             if (config.toImg) {
-                message += `${(await ctx.puppeteer.render(item[key]))}\n`
+                message += `${(h('html',  h.parse(item[key])))}\n`
             } else {
                 message += `${item[key]}\n`
             }
@@ -89,4 +89,6 @@ function RSScomposer(item: { [x: string]: any; }, config: Config, ctx: Context) 
     })
     return message
 }
+
+
 export { UpdateSubOperator, getRSSbody, getRSSItems, RSScomposer }
