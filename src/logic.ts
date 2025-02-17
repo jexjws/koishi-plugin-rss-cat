@@ -44,7 +44,9 @@ const AddSubOperator = (ctx: Context, session: Session<never, "rsscatSource", Co
 
                 //数据库不存在该rssLink，当场创一个
                 logger.debug("数据表不存在该rssLink，创建一行。")
-                let newRow = await ctx.database.create('rsscat.source', { rssLink: data.rssLink })
+                let newRow = await ctx.database.create('rsscat.source', { rssLink: data.rssLink,
+                    lastBroadcastedpubDate: new Date(),
+                 })
 
                 DBreturn = [{ subscriber: [], id: newRow.id }] //更新DBreturn
             } else if (DBreturn[0].subscriber.includes(data.ChannelID)) {
