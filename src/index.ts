@@ -105,14 +105,14 @@ export async function apply(ctx: Context, config: Config) {
       })
     }, config.refresh * Time.second)
 
-    const DBreturn = await ctx.database.get('rsscat.source', {})
+  //   const DBreturn = await ctx.database.get('rsscat.source', {})
 
-    from(DBreturn).pipe(
-      updater.UpdateSubOperator(ctx, config)
-    ).subscribe({
-      error: (err) => {
-        logger.warn(err);
-  }})
+  //   from(DBreturn).pipe(
+  //     updater.UpdateSubOperator(ctx, config)
+  //   ).subscribe({
+  //     error: (err) => {
+  //       logger.warn(err);
+  // }})
     
   })
 

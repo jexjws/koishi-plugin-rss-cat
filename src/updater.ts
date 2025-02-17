@@ -18,10 +18,10 @@ const UpdateSubOperator = (ctx: Context, config: Config) => {
                 EMPTY 
             }
         }, config.concurrent),
-        map((data) => {
-            logger.debug(data)
-            return data
-        }),
+        // map((data) => {
+        //     logger.debug(data)
+        //     return data
+        // }),
         mergeMap(async ({ httpRes, RssSource }) => {
             const feedItems = await getRSSItems(httpRes.data); //先把Rss里面的items取出来
             const newItems = feedItems.filter((item: { pubDate: string | number | Date; }) => {
@@ -35,6 +35,7 @@ const UpdateSubOperator = (ctx: Context, config: Config) => {
                 logger.info(`${RssSource.id} 号源有${newItems.length}条更新，开始广播这些更新。`)
                 for (const item of newItems) {
                     const message = RSScomposer(item, config, ctx);
+                    logger.debug(`广播：${message}`)
                     await ctx.broadcast(RssSource.subscriber, message);
                 }
                 const latestDate = new Date(Math.max(...newItems.map((item: { pubDate: string | number | Date; }) => new Date(item.pubDate).getTime())));
