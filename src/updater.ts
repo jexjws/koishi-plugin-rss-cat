@@ -9,18 +9,18 @@ const FeedParser = require("feedparser");
 const UpdateSubOperator = (ctx: Context, config: Config) => {
     return pipe(
         mergeMap(async (RssSource: RssSource) => {
-            logger.debug(`拉取: ${JSON.stringify(RssSource)}`)
-            const { data, headers } = await getRSSbody(RssSource.rssLink, ctx, config)
-
-            return { httpRes: { data, headers }, RssSource }
-        },config.concurrent),
-        map((data) =>{
+            try {
+                logger.debug(`拉取: ${JSON.stringify(RssSource)}`)
+                const { data, headers } = await getRSSbody(RssSource.rssLink, ctx, config)
+                return { httpRes: { data, headers }, RssSource }
+            } catch (error) {
+                logger.warn(`拉取 ${RssSource.rssLink} 失败: ${error.message}`)
+                EMPTY 
+            }
+        }, config.concurrent),
+        map((data) => {
             logger.debug(data)
             return data
-        }),
-        catchError((err, caught) => {
-            logger.warn(`拉取失败: ${err.message}`)
-            return EMPTY
         }),
         mergeMap(async ({ httpRes, RssSource }) => {
             const feedItems = await getRSSItems(httpRes.data); //先把Rss里面的items取出来
@@ -41,7 +41,7 @@ const UpdateSubOperator = (ctx: Context, config: Config) => {
                 await ctx.database.set('rsscat.source', RssSource.id, {
                     lastBroadcastedpubDate: latestDate,
                 });
-            }else{
+            } else {
                 logger.debug(`${RssSource.id} 号源没有更新。`)
             }
 
@@ -78,7 +78,7 @@ async function getRSSItems(data: string): Promise<any[]> {
 
 
 import { parseDocument } from 'htmlparser2';
-import {findAll} from 'domutils';
+import { findAll } from 'domutils';
 
 function RSScomposer(item: { [x: string]: string; }, config: Config, ctx: Context) {
     let message: string = ''
@@ -89,13 +89,13 @@ function RSScomposer(item: { [x: string]: string; }, config: Config, ctx: Contex
         const imgSources = [];
         // 1. 使用 htmlparser2 解析 HTML 字符串
         const dom = parseDocument(html);
-    
+
         // 2. 使用 domhandler 的 findAll 查找所有的 <img> 标签
         const imgElements = findAll(
             (node) => node.type === 'tag' && node.name === 'img',
             dom.children
         );
-    
+
         // 3. 遍历所有的 <img> 标签，并提取 src 属性
         imgElements.forEach(img => {
             if (img.attribs && img.attribs.src) { // 确保 attribs 和 src 存在
@@ -103,7 +103,7 @@ function RSScomposer(item: { [x: string]: string; }, config: Config, ctx: Contex
             }
         });
         return imgSources;
-    
+
     }
     Object.entries(config.RSSitem).forEach(async ([key, enabled]) => {
         if (!enabled) return
@@ -112,7 +112,7 @@ function RSScomposer(item: { [x: string]: string; }, config: Config, ctx: Contex
             const htmlContent = getItemVal(baseKey);
             const imgUrls = extractImgUrlsFromHTML(htmlContent);
             if (imgUrls.length > 0) {
-                message += imgUrls.map(url => h('img',{src:url})+'\n');
+                message += imgUrls.map(url => h('img', { src: url }) + '\n');
             }
             return
         }
@@ -125,8 +125,8 @@ function RSScomposer(item: { [x: string]: string; }, config: Config, ctx: Contex
                 message += `${getItemVal(key)}`
             }
             return
-        } 
-            message += `${getItemVal(key)}`
+        }
+        message += `${getItemVal(key)}`
     })
     return message
 }
